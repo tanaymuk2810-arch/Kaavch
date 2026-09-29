@@ -1,4 +1,4 @@
-# Suraksha Trainer — AR Vocational Safety Certification (Jharkhand)
+# Kaavach — AR Vocational Safety Certification (Jharkhand)
 
 **AR-based vocational training & safety certification for mining, steel & mica workers in Jharkhand.**
 
