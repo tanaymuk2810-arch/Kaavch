@@ -33,3 +33,10 @@ __pycache__/
 # --- Logs / OS ---
 *.log
 Thumbs.db
+Desktop.ini
+
+# --- Local auth / helper leftovers: never committed ---
+.ghlogin*.txt
+*.keystore
+*.jks
+google-services.json
