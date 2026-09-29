@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E3A24"/>
+      <stop offset="1" stop-color="#07341E"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#bg)"/>
+  <g opacity="0.16" fill="#A9D9BE">
+    <circle cx="40" cy="36" r="3"/><circle cx="80" cy="66" r="2"/><circle cx="270" cy="40" r="3"/>
+    <circle cx="292" cy="90" r="2"/><circle cx="250" cy="120" r="2.5"/><circle cx="52" cy="120" r="2.5"/>
+  </g>
+  <g>
+    <ellipse cx="160" cy="150" rx="86" ry="12" fill="#042416"/>
+    <path d="M96 108 a64 64 0 0 1 128 0 Z" fill="#F7C55C"/>
+    <path d="M88 108 a72 72 0 0 1 144 0 l-8 0 a64 64 0 0 0 -128 0 Z" fill="#0F6B3A"/>
+    <rect x="84" y="104" width="152" height="14" rx="7" fill="#0F6B3A"/>
+    <rect x="150" y="40" width="20" height="34" rx="6" fill="#0F6B3A"/>
+    <path d="M118 78 q42 -26 84 0" fill="none" stroke="#D6EDDF" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="160" cy="66" r="7" fill="#D6EDDF"/>
+  </g>
+  <g>
+    <circle cx="52" cy="52" r="17" fill="none" stroke="#F7C55C" stroke-width="4"/>
+    <path d="M52 44 v16 M44 52 h16" stroke="#F7C55C" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <rect x="0" y="158" width="320" height="22" fill="#042416"/>
+  <text x="16" y="173" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#F7C55C">PPE · हेलमेट</text>
+</svg>

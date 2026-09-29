@@ -1,0 +1,82 @@
+{
+  "moduleId": "gas_confined",
+  "version": 3,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "g1",
+      "type": "MC",
+      "prompt": { "en": "Soma feels dizzy near a storage tank and smells rotten eggs. The BEST immediate action is:", "hi": "सोमा को टंकी के पास चक्कर आ रहा है और सड़े अंडे जैसी गंध आ रही है। सबसे अच्छा तुरंत काम है:", "sat": "ᱥᱚᱢᱟ ᱴᱮᱸᱠ ᱥᱩᱨ ᱨᱮ ᱵᱚᱦᱚᱜ ᱟᱹᱪᱩᱨᱚᱜ ᱠᱟᱱᱟᱭ ᱟᱨ ᱨᱚᱴᱷᱮᱱ ᱵᱤᱞᱤ ᱞᱮᱠᱟ ᱥᱚᱲᱮ ᱦᱤᱡᱩᱜ ᱠᱟᱱᱟ. ᱡᱚᱛᱚ ᱠᱷᱚᱱ ᱱᱟᱯᱟᱭ ᱩᱱᱤ ᱚᱠᱛᱮ ᱠᱟᱹᱢᱤ ᱫᱚ:" },
+      "points": 20,
+      "options": [
+        { "id": "bend", "label": { "en": "Bend down to find where the smell comes from", "hi": "झुककर देखें गंध कहां से आ रही है", "sat": "ᱦᱩᱰᱤᱧ ᱠᱟᱛᱮᱜ ᱧᱮᱞ ᱢᱮ ᱥᱚᱲᱮ ᱚᱠᱟ ᱠᱷᱚᱱ" } },
+        { "id": "breath", "label": { "en": "Hold breath, move upwind, alert and report", "hi": "सांस रोकें, हवा के विरुद्ध जाएं, बताएं और रिपोर्ट करें", "sat": "ᱥᱟᱦᱮᱫ ᱫᱚᱦᱚ ᱠᱟᱛᱮᱜ, ᱦᱚᱭ ᱵᱤᱨᱩᱫᱷ ᱪᱟᱞᱟᱜ, ᱠᱷᱚᱵᱚᱨ ᱮᱢ" } },
+        { "id": "water", "label": { "en": "Drink water and sit down to rest", "hi": "पानी पीकर बैठकर आराम करें", "sat": "ᱫᱟᱜ ᱧᱩ ᱠᱟᱛᱮᱜ ᱫᱩᱲᱩᱵ ᱢᱮ" } },
+        { "id": "carry", "label": { "en": "Keep working — dizziness always passes", "hi": "काम जारी रखें — चक्कर उतर ही जाएगा", "sat": "ᱠᱟᱹᱢᱤ ᱪᱟᱹᱞᱩ ᱫᱚᱦᱚ, ᱟᱹᱪᱩᱨ ᱪᱟᱵᱟᱜᱼᱟ" } }
+      ],
+      "answer": 1,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "g2",
+      "type": "MC",
+      "prompt": { "en": "Why must one trained person ALWAYS stay outside a confined space?", "hi": "एक प्रशिक्षित व्यक्ति को हमेशा सीमित स्थान के बाहर क्यों रहना चाहिए?", "sat": "ᱪᱮᱫᱟᱜ ᱢᱤᱫ ᱥᱮᱪᱮᱫ ᱦᱚᱲ ᱡᱚᱛᱚ ᱚᱠᱛᱮ ᱮᱥᱮᱫ ᱴᱷᱟᱶ ᱵᱟᱦᱨᱮ ᱛᱟᱦᱮᱸᱱ ᱦᱩᱭᱩᱜᱼᱟ?" },
+      "points": 20,
+      "options": [
+        { "id": "tools", "label": { "en": "To hold tools and pass them inside", "hi": "औजार पकड़ने और अंदर देने के लिए", "sat": "ᱦᱟᱹᱛᱷᱤᱭᱟᱹᱨ ᱥᱟᱵ ᱟᱨ ᱵᱷᱤᱛᱨᱤ ᱮᱢ ᱞᱟᱹᱜᱤᱫ" } },
+        { "id": "rescue", "label": { "en": "To raise the alarm and start rescue if the insider fails", "hi": "अंदर वाला फंसे तो अलार्म बजाने और बचाव के लिए", "sat": "ᱵᱷᱤᱛᱨᱤ ᱦᱚᱲ ᱮᱥᱮᱫ ᱞᱮᱱ ᱨᱮ ᱟᱞᱟᱨᱢ ᱟᱨ ᱵᱟᱧᱪᱟᱣ ᱞᱟᱹᱜᱤᱫ" } },
+        { "id": "faster", "label": { "en": "To finish the job faster by helping", "hi": "मदद करके काम जल्दी खत्म करने के लिए", "sat": "ᱜᱚᱲᱚ ᱠᱟᱛᱮᱜ ᱩᱥᱟᱹᱨᱟ ᱢᱩᱪᱟᱹᱫ ᱞᱟᱹᱜᱤᱫ" } },
+        { "id": "rule", "label": { "en": "Only because the rule book says so", "hi": "सिर्फ इसलिए कि नियम किताब में लिखा है", "sat": "ᱱᱤᱭᱚᱢ ᱯᱩᱛᱷᱤ ᱨᱮ ᱚᱞ ᱢᱮᱱᱟᱜ ᱠᱷᱟᱹᱛᱤᱨ ᱜᱮ" } }
+      ],
+      "answer": 1,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "g3",
+      "type": "TRUE_FALSE",
+      "prompt": { "en": "If the gas detector beeps, finish your current task first, then leave.", "hi": "गैस डिटेक्टर बजे तो पहले चलता काम खत्म करें, फिर निकलें।", "sat": "ᱜᱮᱥ ᱰᱤᱴᱮᱠᱴᱚᱨ ᱨᱟᱦᱟᱲ ᱞᱮᱱ ᱨᱮ ᱞᱟᱦᱟ ᱠᱟᱹᱢᱤ ᱢᱩᱪᱟᱹᱫ ᱠᱟᱛᱮᱜ ᱚᱰᱚᱠ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "g4",
+      "type": "SEQ",
+      "prompt": { "en": "Put the gas-leak response in the correct order.", "hi": "गैस रिसाव पर की जाने वाली कार्रवाई सही क्रम में लगाएं।", "sat": "ᱜᱮᱥ ᱡᱷᱚᱨᱚᱜ ᱠᱟᱹᱢᱤ ᱴᱷᱤᱠ ᱥᱮᱨᱮᱧ ᱨᱮ ᱫᱚᱦᱚ ᱢᱮ." },
+      "points": 20,
+      "options": [
+        { "id": "stop", "label": { "en": "Stop all work at once", "hi": "सारा काम तुरंत रोकें", "sat": "ᱡᱚᱛᱚ ᱠᱟᱹᱢᱤ ᱩᱱᱤ ᱚᱠᱛᱮ ᱵᱚᱸᱫᱚ" } },
+        { "id": "spark", "label": { "en": "No switches, no phones, no flames", "hi": "न स्विच, न फोन, न आग", "sat": "ᱥᱩᱭᱤᱪ ᱟᱞᱚ, ᱯᱷᱚᱱ ᱟᱞᱚ, ᱥᱮᱸᱜᱮᱞ ᱟᱞᱚ" } },
+        { "id": "alert", "label": { "en": "Alert everyone and move upwind", "hi": "सबको बताएं और हवा के विरुद्ध जाएं", "sat": "ᱦᱚᱲ ᱠᱷᱚᱵᱚᱨ ᱟᱨ ᱦᱚᱭ ᱵᱤᱨᱩᱫᱷ ᱥᱮᱫ ᱪᱟᱞᱟᱜ" } },
+        { "id": "report", "label": { "en": "Report to the supervisor", "hi": "पर्यवेक्षक को रिपोर्ट करें", "sat": "ᱯᱟᱨᱵᱮᱠᱷᱚᱠ ᱴᱷᱮᱱ ᱨᱤᱯᱚᱴ" } }
+      ],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": ["stop", "spark", "alert", "report"],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "g5",
+      "type": "AR_EVIDENCE",
+      "prompt": { "en": "In the AR task you found the gas cylinder.", "hi": "AR कार्य में आपने गैस सिलेंडर पाया।", "sat": "AR ᱠᱟᱹᱢᱤ ᱨᱮ ᱟᱢ ᱜᱮᱥ ᱥᱤᱞᱤᱱᱰᱟᱨ ᱧᱮᱞ ᱟᱠᱟᱫᱟ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": "ar_cylinder"
+    }
+  ]
+}

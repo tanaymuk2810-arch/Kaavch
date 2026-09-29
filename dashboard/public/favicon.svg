@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="f-shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2B5878"/>
+      <stop offset="0.55" stop-color="#1B4965"/>
+      <stop offset="1" stop-color="#0B2545"/>
+    </linearGradient>
+    <linearGradient id="f-bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D9A566"/>
+      <stop offset="0.5" stop-color="#C97B5A"/>
+      <stop offset="1" stop-color="#7F4F38"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 4.5 55.5 13v18.2c0 10.6-8 18.4-23.5 23.3C16.5 49.6 8.5 41.8 8.5 31.2V13Z" fill="url(#f-shield)" stroke="#04101E" stroke-width="1.6"/>
+  <ellipse cx="32" cy="15.5" rx="12.5" ry="5.5" fill="#FFFFFF" opacity="0.3"/>
+  <path d="M35.5 17 23 37h7.5L28 50l14.5-19.5h-8Z" fill="url(#f-bolt)" stroke="#5F2510" stroke-width="1.6" stroke-linejoin="round"/>
+</svg>

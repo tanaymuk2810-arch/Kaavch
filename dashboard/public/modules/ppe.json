@@ -1,0 +1,43 @@
+{
+  "moduleId": "ppe",
+  "title": { "en": "PPE & Personal Protection", "hi": "PPE और व्यक्तिगत सुरक्षा", "sat": "ᱯᱤᱯᱤᱤ ᱟᱨ ᱟᱡᱟᱜ ᱨᱩᱠᱷᱟᱹᱭᱟᱹ" },
+  "subtitle": { "en": "Correct selection and wearing of protection", "hi": "सही सुरक्षा उपकरण चुनना और पहनना", "sat": "ᱴᱷᱤᱠ ᱨᱩᱠᱷᱟᱹᱭᱟᱹ ᱡᱤᱱᱤᱥ ᱵᱟᱪᱷᱟᱣ ᱟᱨ ᱦᱚᱨᱚᱜ" },
+  "version": 1,
+  "passMark": 80,
+  "steps": [
+    {
+      "id": "ppe_intro",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "PPE is your last shield", "hi": "PPE आपकी अंतिम ढाल है", "sat": "PPE ᱟᱢᱟᱜ ᱢᱩᱪᱟᱹᱫ ᱨᱩᱠᱷᱟᱹᱭᱟᱹ" },
+        "body": { "en": "Helmet, safety boots, gloves, goggles and reflective clothing protect the most common injuries — head hits, foot crush, cuts, dust and sparks. Wear the right PPE for the right task.", "hi": "हेलमेट, सुरक्षा जूते, दस्ताने, चश्मा और रिफ्लेक्टिव कपड़े आम चोटों से बचाते हैं — सिर, पैर, कट, धूल और चिंगारी। सही कार्य के लिए सही PPE पहनें।", "sat": "ᱦᱮᱞᱢᱮᱴ, ᱥᱩᱨᱚᱠᱷᱟ ᱡᱩᱛᱟ, ᱫᱟᱥᱛᱟᱱᱟ, ᱪᱚᱥᱢᱟ ᱟᱨ ᱨᱤᱯᱷᱞᱮᱠᱴᱤᱵᱷ ᱞᱩᱜᱽᱲᱤ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱦᱟᱹᱥᱩ ᱠᱷᱚᱱ ᱵᱟᱧᱪᱟᱣᱟ — ᱵᱚᱦᱚᱜ, ᱡᱟᱝᱜᱟ, ᱦᱟᱹᱴᱤᱝ ᱨᱟᱹᱯᱩᱫ, ᱫᱷᱩᱲᱤ ᱟᱨ ᱥᱤᱨᱡᱚᱱ. ᱴᱷᱤᱠ ᱠᱟᱹᱢᱤ ᱞᱟᱹᱜᱤᱫ ᱴᱷᱤᱠ PPE ᱦᱚᱨᱚᱜ ᱢᱮ." }
+      }
+    },
+    {
+      "id": "ar_helmet",
+      "type": "AR",
+      "task": {
+        "taskId": "ar_helmet",
+        "instruction": { "en": "Find the SAFETY HELMET among the objects. Tap its button below.", "hi": "वस्तुओं में सुरक्षा हेलमेट ढूंढें। नीचे बटन दबाएं।", "sat": "ᱡᱤᱱᱤᱥ ᱠᱚ ᱢᱩᱫᱽ ᱨᱮ ᱥᱩᱨᱚᱠᱷᱟ ᱦᱮᱞᱢᱮᱴ ᱧᱮᱞ ᱠᱟᱛᱮᱜ ᱵᱚᱛᱚᱢ ᱛᱮᱵᱮ ᱢᱮ." },
+        "correctAsset": "models/helmet.glb",
+        "distractors": [ "models/safety_sign.glb", "models/extinguisher.glb" ]
+      }
+    },
+    {
+      "id": "ppe_wear",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Wearing sequence", "hi": "पहनने का क्रम", "sat": "ᱦᱚᱨᱚᱜ ᱥᱮᱨᱮᱧ" },
+        "body": { "en": "1. Reflective vest. 2. Helmet, strap under the chin. 3. Safety boots. 4. Goggles over the helmet strap. 5. Gloves for handling. Replace damaged PPE — a cracked helmet protects nothing.", "hi": "1. रिफ्लेक्टिव जैकेट। 2. हेलमेट, पट्टा ठुड्डी के नीचे। 3. सुरक्षा जूते। 4. चश्मा। 5. छूने के लिए दस्ताने। टूटा PPE बदलें — टूटा हेलमेट कुछ नहीं बचाता।", "sat": "᱑. ᱨᱤᱯᱷᱞᱮᱠᱴᱤᱵᱷ ᱡᱟᱠᱮᱴ. ᱒. ᱦᱮᱞᱢᱮᱴ, ᱯᱟᱴᱟ ᱪᱤᱵᱩᱠ ᱞᱟᱛᱟᱨ ᱨᱮ. ᱓. ᱥᱩᱨᱚᱠᱷᱟ ᱡᱩᱛᱟ. ᱔. ᱪᱚᱥᱢᱟ. ᱕. ᱥᱟᱵ ᱞᱟᱹᱜᱤᱫ ᱫᱟᱥᱛᱟᱱᱟ. ᱨᱟᱹᱯᱩᱫ PPE ᱵᱚᱫᱚᱞ ᱢᱮ — ᱨᱟᱹᱯᱩᱫ ᱦᱮᱞᱢᱮᱴ ᱛᱮ ᱪᱮᱫ ᱦᱚᱸ ᱵᱟᱝ ᱵᱟᱧᱪᱟᱣᱟ." }
+      }
+    },
+    {
+      "id": "ppe_summary",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Remember", "hi": "याद रखें", "sat": "ᱩᱫᱩᱜ ᱫᱚᱦᱚ ᱢᱮ" },
+        "body": { "en": "Right PPE, right task, every time. Inspect before use. Report damage.", "hi": "सही PPE, सही कार्य, हर बार। उपयोग से पहले जांचें। क्षति की रिपोर्ट करें।", "sat": "ᱴᱷᱤᱠ PPE, ᱴᱷᱤᱠ ᱠᱟᱹᱢᱤ, ᱡᱚᱛᱚ ᱫᱷᱟᱣ. ᱵᱮᱣᱦᱟᱨ ᱞᱟᱦᱟᱸ ᱨᱮ ᱧᱮᱞ ᱢᱮ. ᱨᱟᱹᱯᱩᱫ ᱨᱮᱱᱟᱜ ᱨᱤᱯᱚᱴ ᱮᱢ ᱢᱮ." }
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "moduleId": "fire_explosion",
+  "version": 2,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "MC",
+      "prompt": { "en": "A small oil fire starts in a workshop bin. Your FIRST action should be:", "hi": "कारखाने के डिब्बे में थोड़े तेल में आग लगी। सबसे पहला काम:", "sat": "Karkhana bin re alom oil selạ hoyena. Agom kaj do:" },
+      "points": 20,
+      "options": [
+        { "id": "broom", "label": { "en": "Beat it out with a broom", "hi": "झाड़ू से पीटकर बुझाएं", "sat": "Jharu khon del kate goj" } },
+        { "id": "alarm", "label": { "en": "Raise the alarm and alert everyone nearby", "hi": "अलार्म बजाएं और आस-पास सबको बताएं", "sat": "Alarm tega ar sur horo khobor" } },
+        { "id": "water", "label": { "en": "Pour a bucket of water on the oil", "hi": "तेल पर पानी की बाल्टी डालें", "sat": "Oil re dak balti baja" } },
+        { "id": "work", "label": { "en": "Keep working — it is only small", "hi": "काम जारी रखें — आग छोटी है", "sat": "Kaj calakha — hata selạ kana" } }
+      ],
+      "answer": 1,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "q2",
+      "type": "MC",
+      "prompt": { "en": "When using a fire extinguisher, you must aim at:", "hi": "अग्निशामक चलाते समय निशाना कहां लगाएं:", "sat": "Sirkao calakha re oko te aim:" },
+      "points": 20,
+      "options": [
+        { "id": "top", "label": { "en": "The top of the flames", "hi": "लौ के सबसे ऊपर", "sat": "Lahan cetan bhag" } },
+        { "id": "smoke", "label": { "en": "The smoke above the fire", "hi": "आग के ऊपर का धुआं", "sat": "Selạ cetan dhua" } },
+        { "id": "base", "label": { "en": "The base of the flames", "hi": "लौ की जड़ पर", "sat": "Lahan dalab re" } },
+        { "id": "wall", "label": { "en": "The nearest wall", "hi": "नज़दीकी दीवार पर", "sat": "Nae laika bhint re" } }
+      ],
+      "answer": 2,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "q3",
+      "type": "SEQ",
+      "prompt": { "en": "Put the evacuation steps in the correct order.", "hi": "निकासी के चरणों को सही क्रम में लगाएं।", "sat": "Dhaja bandho rejeya mone seid re teb." },
+      "points": 20,
+      "options": [
+        { "id": "stop", "label": { "en": "Stop work at once", "hi": "तुरंत काम रोकें", "sat": "Singida kaj bandho" } },
+        { "id": "alarm", "label": { "en": "Press the fire alarm", "hi": "फायर अलार्म दबाएं", "sat": "Fire alarm cadap" } },
+        { "id": "exit", "label": { "en": "Leave by the nearest marked exit", "hi": "नज़दीकी चिह्नित निकास से निकलें", "sat": "Nae laika chinh dahra khon oduk" } },
+        { "id": "muster", "label": { "en": "Assemble at the muster point for headcount", "hi": "गिनती हेतु निर्धारित स्थान पर जुटें", "sat": "Ginti mente milak thai re joro" } }
+      ],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": ["stop", "alarm", "exit", "muster"],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "q4",
+      "type": "TRUE_FALSE",
+      "prompt": { "en": "You should use a lift to evacuate during a fire.", "hi": "आग में निकलने के लिए लिफ्ट का उपयोग करना चाहिए।", "sat": "Selạ re dahra mente lift sap hoyok." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "q5",
+      "type": "AR_EVIDENCE",
+      "prompt": { "en": "In the AR task you operated the fire extinguisher correctly.", "hi": "AR कार्य में आपने अग्निशामक सही तरीके से चलाया।", "sat": "AR kaj re maha sirkao mone calakha." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": "ar_extinguisher"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kaavach — Worker Registration (preview)</title>
+<style>
+  :root { --green: #0F6B3A; --green-dark: #0A4E2B; --green-light: #E8F5EE; --amber: #D97706; }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: #0e1f16; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center; gap: 24px;
+    flex-wrap: wrap; padding: 24px; color: #111;
+  }
+  .info { color:#cfe8d8; max-width: 300px; font-size: 13px; line-height: 1.6; }
+  .info h2 { color:#fff; margin-bottom:8px; }
+  .info .tag { color: var(--amber); font-weight:600; }
+  .phone {
+    width: 390px; height: 780px; border-radius: 44px; overflow: hidden;
+    background: #fff; box-shadow: 0 24px 60px rgba(0,0,0,.5); border: 10px solid #1c2733; position: relative;
+    display: flex; flex-direction: column;
+  }
+  .notch { position:absolute; top:0; left:50%; transform:translateX(-50%); width:140px; height:26px; background:#1c2733; border-radius:0 0 16px 16px; z-index:5; }
+  .appbar {
+    background: var(--green); color:#fff; display:flex; align-items:center; gap:8px;
+    padding: 30px 16px 12px; font-size: 18px; font-weight: 600;
+  }
+  .appbar .back { cursor:pointer; opacity:.9; }
+  .body { padding: 20px 18px; overflow-y:auto; flex:1; }
+  .field { margin-bottom: 14px; }
+  .field label { display:block; font-size:12px; font-weight:600; color:#2b342e; margin-bottom:6px; }
+  .field input {
+    width:100%; padding:12px 14px; font-size:15px; border:1.5px solid #7a8a80; border-radius:8px; outline:none;
+    background:#fff; color:#111; caret-color: var(--green-dark);
+  }
+  .field input::placeholder { color:#6b7a71; opacity:1; }
+  .field input:focus { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-light); }
+  .langbtn {
+    width:100%; text-align:left; padding:12px 14px; font-size:15px; border:1.5px solid #7a8a80;
+    border-radius:8px; background:#fff; color:#111; cursor:pointer; display:flex; justify-content:space-between; align-items:center;
+  }
+  .langbtn:hover { border-color: var(--green); }
+  .langmenu { margin-top:6px; border:1px solid #cad4cd; border-radius:8px; overflow:hidden; }
+  .langmenu button { width:100%; padding:11px 14px; text-align:left; border:none; background:#fff; cursor:pointer; font-size:14px; }
+  .langmenu button:hover { background: var(--green-light); }
+  .submit {
+    width:100%; margin-top:18px; padding:14px; font-size:16px; font-weight:600; color:#fff;
+    background: var(--green); border:none; border-radius:10px; cursor:pointer;
+  }
+  .submit:hover { background: var(--green-dark); }
+  .toast {
+    position:absolute; left:16px; right:16px; bottom:18px; background:#1f2a24; color:#fff;
+    padding:12px 14px; border-radius:10px; font-size:13px; text-align:center; opacity:0;
+    transition: opacity .25s; z-index:6;
+  }
+  .toast.error { background:#7f1d1d; } .toast.ok { background: var(--green-dark); }
+  .toast.show { opacity:1; }
+  footer {
+    width:100%; text-align:center; color:#7ba08c; font-size:12px;
+  }
+</style>
+</head>
+<body>
+  <div class="info">
+    <h2 style="display:flex;align-items:center;gap:10px">
+      <svg viewBox="0 0 48 48" fill="none" width="44" height="44">
+        <path d="M24 3.5 43 10.5v13.5c0 10.2-7.6 17.6-19 22-11.4-4.4-19-11.8-19-22V10.5L24 3.5Z" fill="#0F6B3A"/>
+        <path d="M24 3.5 43 10.5v13.5c0 10.2-7.6 17.6-19 22-11.4-4.4-19-11.8-19-22V10.5L24 3.5Z" stroke="#79C19B" stroke-width="2" opacity=".45"/>
+        <path d="M26.5 12 15 28h7L20 38l13-16.5h-7.5Z" fill="#F7C55C"/>
+      </svg>
+      <span>Kaavach</span>
+    </h2>
+    <div class="tag">Offline-first · हिन्दी / सन्थाली</div>
+    <p style="margin-top:10px">Static look-and-feel preview of the Android registration screen
+      (<code style="color:#d9f3e5">ui/screens/RegisterScreen.kt</code>). Submit shows a mock success
+      toast. The real app persists the worker to SQLite and opens Home.</p>
+  </div>
+
+  <div class="phone">
+    <div class="notch"></div>
+    <div class="appbar">
+      <span class="back">←</span>
+      <span>Worker Registration</span>
+    </div>
+    <div class="body">
+      <div class="field">
+        <label>Full name</label>
+        <input id="name" type="text" placeholder="e.g. Ram Soren" />
+      </div>
+      <div class="field">
+        <label>Mobile number</label>
+        <input id="phone" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit number" />
+      </div>
+      <div class="field">
+        <label>Work site</label>
+        <input id="site" type="text" placeholder="Site name / company" />
+      </div>
+      <div class="field">
+        <label>District</label>
+        <input id="district" type="text" placeholder="District (default: Dhanbad)" />
+      </div>
+      <div class="field">
+        <label>Language</label>
+        <button id="langbtn" class="langbtn" onclick="toggleLang(this)"><span>हिन्दी (Hindi)</span><span style="font-size:11px;opacity:.6">▼</span></button>
+        <div id="langmenu" class="langmenu" style="display:none">
+          <button data-lang="hi" onclick="pickLang(this)">हिन्दी (Hindi)</button>
+          <button data-lang="sat" onclick="pickLang(this)">Santali (Ol Chiki)</button>
+          <button data-lang="en" onclick="pickLang(this)">English</button>
+        </div>
+      </div>
+      <button class="submit" onclick="submit()">Register &amp; Start</button>
+    </div>
+    <div id="toast" class="toast"></div>
+  </div>
+
+  <footer>Preview of the worker app — not part of the admin dashboard.</footer>
+
+<script>
+  var lang = "hi";
+  function toggleLang(btn) {
+    document.getElementById("langmenu").style.display =
+      document.getElementById("langmenu").style.display === "none" ? "block" : "none";
+  }
+  function pickLang(btn) {
+    lang = btn.dataset.lang;
+    document.querySelector("#langbtn span").textContent = btn.textContent;
+    document.getElementById("langmenu").style.display = "none";
+  }
+  function toast(msg, ok) {
+    var t = document.getElementById("toast");
+    t.textContent = msg;
+    t.className = "toast show " + (ok === false ? "error" : "ok");
+    setTimeout(function () { t.className = "toast"; }, 2200);
+  }
+  var scope = { register: null };
+  function submit() {
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var site = document.getElementById("site").value.trim();
+    var district = document.getElementById("district").value.trim() || "Dhanbad";
+    if (!name || phone.length < 10 || !site) {
+      toast("Please fill all fields", false);
+      return;
+    }
+    // Mock of WorkerRepository.register(...) + navigate to Home.
+    toast("Registered offline — will sync when online." + " (" + district + ", " + lang + ")");
+    setTimeout(function () {
+      document.querySelector(".appbar span:last-child").textContent = "Home";
+      document.querySelector(".body").innerHTML =
+        '<div style="text-align:center;padding-top:120px;color:#0F6B3A;font-size:20px;font-weight:600">✔ Registered</div>' +
+        '<p style="text-align:center;color:#555;font-size:13px;margin-top:8px">Welcome, ' + name + '</p>';
+    }, 1000);
+  }
+  document.getElementById("phone").addEventListener("input", function (e) {
+    this.value = this.value.replace(/\D/g, "").slice(0, 10);
+  });
+</script>
+</body>
+</html>

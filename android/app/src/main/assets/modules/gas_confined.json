@@ -1,0 +1,51 @@
+{
+  "moduleId": "gas_confined",
+  "title": { "en": "Gas Leak & Confined Space", "hi": "गैस रिसाव और सीमित स्थान", "sat": "ᱜᱮᱥ ᱡᱷᱚᱨᱚᱜ ᱟᱨ ᱮᱥᱮᱫ ᱴᱷᱟᱶ" },
+  "subtitle": { "en": "Hazard zones, PPE selection, buddy-system procedures", "hi": "खतरे वाले क्षेत्र, PPE चयन, बडी-सिस्टम प्रक्रिया", "sat": "ᱵᱤᱯᱚᱫ ᱴᱷᱟᱶ, PPE ᱵᱟᱪᱷᱟᱣ, ᱜᱟᱛᱮ ᱦᱚᱨᱟ" },
+  "version": 1,
+  "passMark": 80,
+  "steps": [
+    {
+      "id": "gas_intro",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Danger from invisible gas", "hi": "अदृश्य गैस से खतरा", "sat": "ᱧᱮᱞᱚᱜ ᱵᱟᱝ ᱜᱮᱥ ᱠᱷᱚᱱ ᱵᱤᱯᱚᱫ" },
+        "body": { "en": "In mines and industry, gases like CO, methane and H2S have no colour and no smell. A leak can kill within minutes. Never enter a confined space alone. In this module you will learn to spot gas cylinders, choose correct PPE, and always work with a buddy.", "hi": "खदानों और उद्योगों में CO, मीथेन और H2S जैसी गैसों का कोई रंग या गंध नहीं होता। रिसाव मिनटों में जान ले सकता है। सीमित स्थान में कभी अकेले न जाएं। इस मॉड्यूल में आप गैस सिलेंडर पहचानना, सही PPE चुनना और हमेशा बडी के साथ काम करना सीखेंगे।", "sat": "ᱠᱷᱟᱫᱟᱱ ᱟᱨ ᱠᱟᱨᱠᱷᱟᱱᱟ ᱨᱮ CO, ᱢᱤᱛᱷᱮᱱ ᱟᱨ H2S ᱞᱮᱠᱟᱱ ᱜᱮᱥ ᱨᱮ ᱨᱚᱝᱼᱥᱚᱲᱮ ᱵᱟᱹᱱᱩᱜ. ᱡᱷᱚᱨᱚᱜ ᱢᱤᱱᱤᱴ ᱨᱮᱜᱮ ᱡᱤᱣᱤ ᱦᱟᱛᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ. ᱮᱥᱮᱫ ᱴᱷᱟᱶ ᱨᱮ ᱮᱥᱠᱟᱨ ᱟᱞᱚᱢ ᱵᱚᱞᱚ. ᱱᱚᱣᱟ ᱢᱚᱰᱩᱞ ᱨᱮ ᱜᱮᱥ ᱥᱤᱞᱤᱱᱰᱟᱨ ᱧᱮᱞ, ᱴᱷᱤᱠ PPE ᱵᱟᱪᱷᱟᱣ ᱟᱨ ᱜᱟᱛᱮ ᱥᱟᱶ ᱠᱟᱹᱢᱤ ᱪᱮᱫᱚᱜᱼᱟ." }
+      }
+    },
+    {
+      "id": "ar_cylinder",
+      "type": "AR",
+      "task": {
+        "taskId": "ar_cylinder",
+        "instruction": { "en": "Find the GAS CYLINDER — first sign of a possible leak zone. Tap its button below.", "hi": "GAS सिलेंडर ढूंढें — संभावित रिसाव क्षेत्र का पहला संकेत। नीचे बटन दबाएं।", "sat": "ᱜᱮᱥ ᱥᱤᱞᱤᱱᱰᱟᱨ ᱧᱮᱞ ᱢᱮ — ᱡᱷᱚᱨᱚᱜ ᱴᱷᱟᱶ ᱨᱮᱱᱟᱜ ᱯᱟᱹᱦᱤᱞ ᱪᱤᱱᱦᱟᱹ. ᱞᱟᱛᱟᱨ ᱵᱚᱛᱚᱢ ᱛᱮᱵᱮ ᱢᱮ." },
+        "correctAsset": "models/gas_cylinder.glb",
+        "distractors": [ "models/safety_sign.glb", "models/firstaid.glb" ]
+      }
+    },
+    {
+      "id": "theory_buddy",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "The buddy system", "hi": "बडी सिस्टम", "sat": "ᱜᱟᱛᱮ ᱦᱚᱨᱟ" },
+        "body": { "en": "Two people always: one goes in, one stays at the entrance in constant view. Agree on signals. If the buddy inside fails to respond, raise the alarm — do not rush in. The rescuer must never become a second victim.", "hi": "हमेशा दो लोग: एक अंदर जाता है, एक प्रवेश द्वार पर दृष्टि में रहता है। संकेत तय करें। अंदर वाला जवाब न दे तो अलार्म बजाएं — अंदर न घुसें। बचाने वाला कभी दूसरा शिकार न बने।", "sat": "ᱵᱟᱨᱭᱟ ᱦᱚᱲ ᱡᱚᱛᱚ ᱚᱠᱛᱮ: ᱢᱤᱫ ᱵᱷᱤᱛᱨᱤ ᱥᱮᱱᱚᱜ, ᱢᱤᱫ ᱫᱩᱣᱟᱹᱨ ᱨᱮ ᱧᱮᱞ ᱨᱮ ᱛᱟᱦᱮᱸᱱ. ᱤᱥᱟᱹᱨᱟ ᱞᱟᱹᱭ ᱢᱮ. ᱵᱷᱤᱛᱨᱤ ᱦᱚᱲ ᱛᱮᱞᱟ ᱵᱟᱝ ᱮᱢᱟᱭ ᱠᱷᱟᱱ ᱟᱞᱟᱨᱢ ᱛᱮᱜᱟᱭ ᱢᱮ — ᱵᱷᱤᱛᱨᱤ ᱟᱞᱚᱢ ᱵᱚᱞᱚ. ᱵᱟᱧᱪᱟᱣᱤᱡ ᱫᱚ ᱫᱚᱥᱟᱨ ᱵᱤᱯᱚᱫ ᱟᱞᱚᱢ ᱵᱮᱱᱟᱣ." }
+      }
+    },
+    {
+      "id": "theory_ppe_gas",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "PPE for gas areas", "hi": "गैस क्षेत्र के लिए PPE", "sat": "ᱜᱮᱥ ᱴᱷᱟᱶ ᱨᱮᱱᱟᱜ PPE" },
+        "body": { "en": "Wear a helmet, safety shoes and protective clothing. Use a gas detector if available. If the alarm sounds, move against the wind direction to fresh air and report.", "hi": "हेलमेट, सुरक्षा जूते और सुरक्षात्मक कपड़े पहनें। उपलब्ध हो तो गैस डिटेक्टर उपयोग करें। अलार्म बजने पर हवा की विपरीत दिशा में ताजी हवा में जाएं और रिपोर्ट करें।", "sat": "ᱦᱮᱞᱢᱮᱴ, ᱥᱩᱨᱚᱠᱷᱟ ᱡᱩᱛᱟ ᱟᱨ ᱨᱩᱠᱷᱟᱹᱭᱟᱹ ᱞᱩᱜᱽᱲᱤ ᱦᱚᱨᱚᱜ ᱢᱮ. ᱢᱮᱱᱟᱜ ᱠᱷᱟᱱ ᱜᱮᱥ ᱰᱤᱴᱮᱠᱴᱚᱨ ᱵᱮᱣᱦᱟᱨ ᱢᱮ. ᱟᱞᱟᱨᱢ ᱟᱸᱡᱚᱢ ᱠᱷᱟᱱ ᱦᱚᱭ ᱵᱤᱨᱩᱫᱷ ᱥᱮᱫ ᱱᱟᱶᱟ ᱦᱚᱭ ᱥᱮᱫ ᱪᱟᱞᱟᱜ ᱟᱨ ᱨᱤᱯᱚᱴ ᱮᱢ ᱢᱮ." }
+      }
+    },
+    {
+      "id": "gas_summary",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Remember", "hi": "याद रखें", "sat": "ᱩᱫᱩᱜ ᱫᱚᱦᱚ ᱢᱮ" },
+        "body": { "en": "Spot the source. Always wear PPE. Buddy system mandatory. Never enter alone.", "hi": "स्रोत पहचानें। हमेशा PPE पहनें। बडी सिस्टम अनिवार्य। कभी अकेले प्रवेश न करें।", "sat": "ᱡᱷᱚᱨᱚᱜ ᱚᱠᱟ ᱠᱷᱚᱱ ᱧᱮᱞ ᱢᱮ. ᱡᱚᱛᱚ ᱚᱠᱛᱮ PPE ᱦᱚᱨᱚᱜ ᱢᱮ. ᱜᱟᱛᱮ ᱦᱚᱨᱟ ᱞᱟᱹᱠᱛᱤᱜᱮᱭᱟ. ᱮᱥᱠᱟᱨ ᱵᱷᱤᱛᱨᱤ ᱟᱞᱚᱢ ᱵᱚᱞᱚ." }
+      }
+    }
+  ]
+}

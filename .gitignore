@@ -1,0 +1,35 @@
+# https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+# --- Global / root ---
+.idea/
+.vscode/
+*.iml
+.DS_Store
+.settings/
+.classpath/
+.project/
+
+# --- Android ---
+android/local.properties
+android/.gradle/
+android/app/build/
+android/build/
+.android/
+.idea/caches/
+
+# --- Secrets: never committed ---
+**/.env
+**/.env.*
+!**/.env.example
+
+# --- Node ---
+node_modules/
+dist/
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- Logs / OS ---
+*.log
+Thumbs.db

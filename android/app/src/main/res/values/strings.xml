@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kaavach</string>
+    <string name="app_tagline">AR Safety App for Jharkhand Workers</string>
+
+    <!-- Common -->
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="continue">Continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="finish">Finish</string>
+    <string name="save">Save</string>
+    <string name="close">Close</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+    <string name="loading">Loading…</string>
+    <string name="error">Something went wrong</string>
+    <string name="language">Language</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Learn safety. Earn your certificate.</string>
+    <string name="onboarding_sub">Interactive AR training in your language. Works without internet.</string>
+    <string name="onboarding_start">Start</string>
+    <string name="onboarding_register">Register Worker</string>
+    <string name="onboarding_login">I already have an account</string>
+
+    <!-- Registration -->
+    <string name="reg_title">Worker Registration</string>
+    <string name="reg_name">Full name</string>
+    <string name="reg_name_hint">e.g. Ram Soren</string>
+    <string name="reg_phone">Mobile number</string>
+    <string name="reg_phone_hint">10-digit number</string>
+    <string name="reg_site">Work site</string>
+    <string name="reg_site_hint">Site name / company</string>
+    <string name="reg_district">District</string>
+    <string name="reg_language">Language</string>
+    <string name="reg_submit">Register &amp; Start</string>
+    <string name="reg_invalid">Please fill all fields</string>
+    <string name="reg_created_offline">Registered offline — will sync when online.</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Salam, %1$s!</string>
+    <string name="home_your_modules">Your Modules</string>
+    <string name="home_my_certificates">My Certificates</string>
+    <string name="home_sync_now">Sync Now</string>
+    <string name="home_pending_sync">Waiting to sync — connect to Wi-Fi</string>
+    <string name="home_profile">Profile</string>
+    <string name="home_cert_count">%1$d certificate(s) earned</string>
+
+    <!-- Modules -->
+    <string name="module_fire_title">Fire &amp; Explosion Response</string>
+    <string name="module_fire_sub">Exit identification, extinguisher use, evacuation sequencing</string>
+    <string name="module_gas_title">Gas Leak &amp; Confined Space</string>
+    <string name="module_gas_sub">Hazard zones, PPE selection, buddy-system procedures</string>
+    <string name="module_machinery_title">Machinery &amp; Equipment Safety</string>
+    <string name="module_machinery_sub">Guards, lock-out/tag-out, moving parts</string>
+    <string name="module_ppe_title">PPE &amp; Personal Protection</string>
+    <string name="module_ppe_sub">Correct selection and wearing of protection</string>
+    <string name="module_emergency_title">First Aid &amp; Emergency Response</string>
+    <string name="module_emergency_sub">Injury response, reporting, rescue basics</string>
+    <string name="module_status_not_started">Not started</string>
+    <string name="module_status_in_progress">In progress</string>
+    <string name="module_status_passed">Passed</string>
+    <string name="module_status_failed">Failed</string>
+    <string name="module_not_installed">Module content not downloaded</string>
+    <string name="module_best">Best score: %1$d%%</string>
+
+    <!-- AR Player -->
+    <string name="ar_permission_title">Camera permission needed</string>
+    <string name="ar_permission_sub">AR training uses your phone camera to overlay safety objects on your real surroundings.</string>
+    <string name="ar_unsupported">AR not supported on this device. Using simplified training mode.</string>
+    <string name="ar_find_plane">Slowly move your phone to scan the floor</string>
+    <string name="ar_place_object">Tap on the floor to place the safety object</string>
+    <string name="ar_task_hint">Find and tap the &#8220;%1$s&#8221; in your surroundings</string>
+    <string name="ar_task_correct">Correct! Well done.</string>
+    <string name="ar_task_wrong">Not quite. Find the correct object.</string>
+    <string name="ar_task_tap">Tap the marked object</string>
+    <string name="ar_next_task">Next Task</string>
+    <string name="ar_instruction">Instructions</string>
+    <string name="ar_exit">Exit module</string>
+    <string name="ar_progress">Task %1$d of %2$d</string>
+
+    <!-- Assessment -->
+    <string name="assess_title">Assessment</string>
+    <string name="assess_intro">Answer the questions to complete %1$s. Pass mark: %2$d%%.</string>
+    <string name="assess_question">Question %1$d of %2$d</string>
+    <string name="assess_submit">Submit Answers</string>
+    <string name="assess_next">Next</string>
+    <string name="assess_passed">Congratulations — you passed!</string>
+    <string name="assess_failed">Score below pass mark. Review the module and try again.</string>
+    <string name="assess_score">Your score: %1$d%%</string>
+    <string name="assess_retry">Retry Assessment</string>
+    <string name="assess_review">Review Module</string>
+    <string name="assess_get_cert">Get My Certificate</string>
+    <string name="assess_seq_hint">Tap the options in the correct order.</string>
+    <string name="assess_ar_done">This question is checked from the AR task you completed in the module.</string>
+    <string name="assess_ar_pending">AR task not completed</string>
+    <string name="assess_ar_pending_hint">Complete the AR activity in the training module first, then return here.</string>
+    <string name="assess_match_done">All pairs matched.</string>
+    <string name="assess_match_pending">Pairs left to match: %1$d</string>
+
+    <!-- Certificate -->
+    <string name="cert_title">Certificate of Completion</string>
+    <string name="cert_issued_to">Issued to</string>
+    <string name="cert_module">Module completed</string>
+    <string name="cert_score">Score</string>
+    <string name="cert_issued_on">Issued on</string>
+    <string name="cert_site">Site</string>
+    <string name="cert_no">Certificate No.</string>
+    <string name="cert_generate">Generate Certificate</string>
+    <string name="cert_generated_offline">Generated offline. Verified by on-device hash-chain + signature.</string>
+    <string name="cert_scan_qr">Scan this QR to verify</string>
+    <string name="cert_share">Share Certificate</string>
+    <string name="cert_save">Save to device</string>
+    <string name="cert_verify_error">Could not verify certificate</string>
+    <string name="cert_chain_verified">Chain verified on device</string>
+
+    <!-- Data export -->
+    <string name="export_title">Export site data</string>
+    <string name="export_hint">Save workers, training attempts and certificates as a JSON file in Downloads. Import it into the desktop dashboard for reports and verification — completely offline, no server.</string>
+    <string name="export_action">Export to Downloads</string>
+    <string name="export_done">Saved to:</string>
+
+    <!-- Profile / settings -->
+    <string name="profile_title">My Profile</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_phone">Mobile</string>
+    <string name="profile_site">Site</string>
+    <string name="profile_district">District</string>
+    <string name="profile_language">Language</string>
+    <string name="profile_sync_status">Sync status</string>
+    <string name="profile_logout">Log Out</string>
+    <string name="profile_logout_confirm">Remove this worker from this device?</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_storage">Downloaded modules</string>
+    <string name="settings_verify_qr">Verify a Certificate</string>
+
+    <!-- Verification camera -->
+    <string name="verify_title">Scan a certificate QR</string>
+    <string name="verify_valid">VALID — Certificate verified</string>
+    <string name="verify_invalid">INVALID — Not in the ledger or signature mismatch</string>
+    <string name="verify_revoked">REVOKED — Certificate has been revoked</string>
+</resources>

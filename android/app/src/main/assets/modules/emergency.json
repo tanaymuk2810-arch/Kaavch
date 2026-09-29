@@ -1,0 +1,43 @@
+{
+  "moduleId": "emergency",
+  "title": { "en": "First Aid & Emergency Response", "hi": "प्राथमिक चिकित्सा और आपातकाल", "sat": "ᱯᱟᱹᱦᱤᱞ ᱩᱯᱪᱟᱹᱨ ᱟᱨ ᱟᱯᱟᱛ ᱛᱮᱞᱟ" },
+  "subtitle": { "en": "Injury response, reporting, rescue basics", "hi": "चोट की प्रतिक्रिया, रिपोर्टिंग, बचाव की मूल बातें", "sat": "ᱦᱟᱹᱥᱩ ᱛᱮᱞᱟ, ᱠᱷᱚᱵᱚᱨ, ᱵᱟᱧᱪᱟᱣ ᱢᱩᱬᱩᱛ" },
+  "version": 1,
+  "passMark": 80,
+  "steps": [
+    {
+      "id": "firstaid_intro",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Every minute counts", "hi": "हर मिनट मायने रखता है", "sat": "ᱡᱚᱛᱚ ᱢᱤᱱᱤᱴ ᱜᱚᱨᱚᱡ" },
+        "body": { "en": "Before helping, make the area safe first. Know where the first-aid kit is. This module teaches you to find the kit and follow the basic response: Safe, Call, Care.", "hi": "मदद से पहले क्षेत्र सुरक्षित करें। जानें कि प्राथमिक चिकित्सा किट कहां है। यह मॉड्यूल किट ढूंढना और बुनियादी क्रम सिखाता है: सुरक्षित, कॉल, देखभाल।", "sat": "ᱜᱚᱲᱚ ᱞᱟᱦᱟᱸ ᱨᱮ ᱴᱷᱟᱶ ᱥᱩᱨᱚᱠᱷᱟ ᱫᱚᱦᱚ ᱢᱮ. ᱵᱟᱰᱟᱭ ᱫᱚᱦᱚ ᱢᱮ ᱯᱟᱹᱦᱤᱞ ᱩᱯᱪᱟᱹᱨ ᱠᱤᱴ ᱚᱠᱟ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ. ᱱᱚᱣᱟ ᱢᱚᱰᱩᱞ ᱨᱮ ᱠᱤᱴ ᱧᱮᱞ ᱟᱨ ᱢᱩᱬᱩᱛ ᱫᱷᱟᱯ ᱪᱮᱫᱚᱜᱼᱟ: ᱥᱩᱨᱚᱠᱷᱟ, ᱦᱚᱦᱚ, ᱩᱯᱪᱟᱹᱨ." }
+      }
+    },
+    {
+      "id": "ar_firstaid",
+      "type": "AR",
+      "task": {
+        "taskId": "ar_firstaid",
+        "instruction": { "en": "Find the FIRST-AID KIT among the objects. Tap its button below.", "hi": "वस्तुओं में प्राथमिक चिकित्सा किट ढूंढें। नीचे बटन दबाएं।", "sat": "ᱡᱤᱱᱤᱥ ᱠᱚ ᱢᱩᱫᱽ ᱨᱮ ᱯᱟᱹᱦᱤᱞ ᱩᱯᱪᱟᱹᱨ ᱠᱤᱴ ᱧᱮᱞ ᱠᱟᱛᱮᱜ ᱵᱚᱛᱚᱢ ᱛᱮᱵᱮ ᱢᱮ." },
+        "correctAsset": "models/firstaid.glb",
+        "distractors": [ "models/gas_cylinder.glb", "models/helmet.glb" ]
+      }
+    },
+    {
+      "id": "firstaid_steps",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Safe - Call - Care", "hi": "सुरक्षित - कॉल - देखभाल", "sat": "ᱥᱩᱨᱚᱠᱷᱟ - ᱦᱚᱦᱚ - ᱩᱯᱪᱟᱹᱨ" },
+        "body": { "en": "SAFE: remove danger. CALL: alert the supervisor and get help. CARE: give first aid you are trained for — stop bleeding with clean cloth, keep victim warm, do not move someone with a suspected spine injury. Always report the accident the same day.", "hi": "सुरक्षित: खतरा हटाएं। कॉल: पर्यवेक्षक को सूचित करें। देखभाल: जिस प्राथमिक चिकित्सा में प्रशिक्षित हैं वह करें — साफ कपड़े से खून रोकें, घायल को गर्म रखें, रीढ़ की चोट वाले को न हिलाएं। दुर्घटना की रिपोर्ट उसी दिन करें।", "sat": "ᱥᱩᱨᱚᱠᱷᱟ: ᱵᱤᱯᱚᱫ ᱚᱪᱚᱜ ᱢᱮ. ᱦᱚᱦᱚ: ᱯᱟᱨᱵᱮᱠᱷᱚᱠ ᱠᱷᱚᱵᱚᱨ ᱮᱢᱟᱭ ᱢᱮ ᱟᱨ ᱜᱚᱲᱚ ᱦᱚᱦᱚ ᱢᱮ. ᱩᱯᱪᱟᱹᱨ: ᱪᱮᱫ ᱥᱮᱪᱮᱫ ᱢᱮᱱᱟᱜᱼᱟ ᱚᱱᱟ ᱩᱯᱪᱟᱹᱨ ᱮᱢ ᱢᱮ — ᱪᱚᱠᱷᱟ ᱞᱩᱜᱽᱲᱤ ᱛᱮ ᱢᱟᱭᱟᱢ ᱵᱚᱸᱫᱷᱮ, ᱦᱟᱹᱥᱩᱜ ᱦᱚᱲ ᱞᱚᱞᱚ ᱫᱚᱦᱚ, ᱫᱷᱩᱨᱤ ᱦᱟᱹᱴᱤᱝ ᱦᱟᱹᱥᱩᱜ ᱦᱚᱲ ᱟᱞᱚᱢ ᱦᱩᱞᱟᱹᱣ. ᱡᱚᱛᱚ ᱫᱤᱱ ᱜᱷᱚᱴᱱᱟ ᱨᱮᱱᱟᱜ ᱨᱤᱯᱚᱴ ᱮᱢ ᱢᱮ." }
+      }
+    },
+    {
+      "id": "emergency_summary",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Remember", "hi": "याद रखें", "sat": "ᱩᱫᱩᱜ ᱫᱚᱦᱚ ᱢᱮ" },
+        "body": { "en": "Find the kit. Safe-Call-Care. Report the same day.", "hi": "किट ढूंढें। सुरक्षित-कॉल-देखभाल। उसी दिन रिपोर्ट करें।", "sat": "ᱠᱤᱴ ᱧᱮᱞ ᱢᱮ. ᱥᱩᱨᱚᱠᱷᱟᱼᱦᱚᱦᱚᱼᱩᱯᱪᱟᱹᱨ. ᱱᱚᱣᱟ ᱫᱤᱱ ᱜᱮ ᱨᱤᱯᱚᱴ ᱮᱢ ᱢᱮ." }
+      }
+    }
+  ]
+}

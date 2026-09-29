@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- CAMERA is used for QR verification and (optionally) AR. No network
+         permissions are declared: the app is fully offline by design. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- ARCore is optional: app gracefully falls back to 2D training mode -->
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00030000"
+        android:required="true" />
+
+    <application
+        android:name=".SurakshaApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SurakshaTrainer"
+        android:usesCleartextTraffic="false">
+
+        <!-- ARCore optional resolution on-device -->
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize|keyboardHidden|uiMode"
+            tools:targetApi="31">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

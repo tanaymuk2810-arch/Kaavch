@@ -1,0 +1,82 @@
+{
+  "moduleId": "gas_confined",
+  "version": 2,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "g1",
+      "type": "MC",
+      "prompt": { "en": "A strange smell comes from the cylinder bank. First, you must:", "hi": "सिलेंडर समूह के पास अजीब गंध आ रही है। सबसे पहले आपको:", "sat": "ᱥᱤᱞᱤᱱᱰᱟᱨ ᱴᱷᱮᱱ ᱵᱮᱜᱟᱨ ᱥᱚᱲᱮ ᱦᱤᱡᱩᱜ ᱠᱟᱱᱟ. ᱟᱜᱚᱢ ᱟᱢ ᱫᱚ:" },
+      "points": 20,
+      "options": [
+        { "id": "match", "label": { "en": "Strike a match to locate the leak", "hi": "रिसाव देखने के लिए माचिस जलाएं", "sat": "ᱡᱷᱚᱨᱚᱜ ᱧᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱢᱟᱹᱪᱤᱥ ᱡᱩᱞ" } },
+        { "id": "fan", "label": { "en": "Switch on the exhaust fan", "hi": "एग्जॉस्ट पंखा चालू करें", "sat": "ᱮᱜᱽᱡᱚᱥᱴ ᱯᱟᱝᱠᱷᱟ ᱪᱟᱹᱞᱩ" } },
+        { "id": "away", "label": { "en": "Move away, alert others and report", "hi": "दूर हटें, सबको बताएं और रिपोर्ट करें", "sat": "ᱥᱟᱺᱜᱤᱧ ᱪᱟᱞᱟᱜ, ᱦᱚᱲ ᱠᱷᱚᱵᱚᱨ ᱟᱨ ᱨᱤᱯᱚᱴ" } },
+        { "id": "drag", "label": { "en": "Drag the cylinder outside alone", "hi": "अकेले सिलेंडर बाहर खींचें", "sat": "ᱮᱥᱠᱟᱨ ᱥᱤᱞᱤᱱᱰᱟᱨ ᱵᱟᱦᱨᱮ ᱟᱹᱜᱩ" } }
+      ],
+      "answer": 2,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "g2",
+      "type": "MC",
+      "prompt": { "en": "Your buddy inside a tank stops responding. You must:", "hi": "टंकी के अंदर साथी जवाब देना बंद कर दे। आपको:", "sat": "ᱴᱮᱸᱠ ᱵᱷᱤᱛᱨᱤ ᱜᱟᱛᱮ ᱦᱚᱲ ᱛᱮᱞᱟ ᱵᱚᱸᱫᱚ ᱟᱠᱟᱫᱟ. ᱟᱢ ᱫᱚ:" },
+      "points": 20,
+      "options": [
+        { "id": "climb", "label": { "en": "Climb in at once to pull him out", "hi": "तुरंत अंदर जाकर उसे निकालें", "sat": "ᱩᱱᱤ ᱚᱠᱛᱮ ᱵᱚᱞᱚ ᱵᱷᱤᱛᱨᱤ ᱛᱮ ᱟᱹᱜᱩ" } },
+        { "id": "alarm", "label": { "en": "Raise the alarm and never enter alone", "hi": "अलार्म बजाएं और अकेले अंदर कभी न जाएं", "sat": "ᱟᱞᱟᱨᱢ ᱛᱮᱜᱟ ᱟᱨ ᱮᱥᱠᱟᱨ ᱵᱷᱤᱛᱨᱤ ᱟᱞᱚ" } },
+        { "id": "wait", "label": { "en": "Wait an hour, then go and check", "hi": "एक घंटा रुककर फिर देखें", "sat": "ᱢᱤᱫ ᱴᱟᱲᱟᱝ ᱛᱟᱸᱜᱤ ᱠᱟᱛᱮᱜ ᱧᱮᱞ" } },
+        { "id": "shout", "label": { "en": "Shout once and return to work", "hi": "एक बार चिल्लाकर काम पर लौटें", "sat": "ᱢᱤᱫ ᱫᱷᱟᱣ ᱦᱚᱦᱚ ᱠᱟᱛᱮᱜ ᱠᱟᱹᱢᱤ ᱨᱩᱣᱟᱹᱲ" } }
+      ],
+      "answer": 1,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "g3",
+      "type": "TRUE_FALSE",
+      "prompt": { "en": "Many killer gases have no colour and no smell.", "hi": "कई जानलेवा गैसों का कोई रंग और कोई गंध नहीं होती।", "sat": "ᱟᱭᱢᱟ ᱜᱚᱡᱚᱜ ᱜᱮᱥ ᱨᱮ ᱨᱚᱝᱼᱥᱚᱲᱮ ᱵᱟᱹᱱᱩᱜ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": true,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "g4",
+      "type": "SEQ",
+      "prompt": { "en": "Put the gas-leak response in the correct order.", "hi": "गैस रिसाव पर की जाने वाली कार्रवाई सही क्रम में लगाएं।", "sat": "ᱜᱮᱥ ᱡᱷᱚᱨᱚᱜ ᱠᱟᱹᱢᱤ ᱴᱷᱤᱠ ᱥᱮᱨᱮᱧ ᱨᱮ ᱫᱚᱦᱚ ᱢᱮ." },
+      "points": 20,
+      "options": [
+        { "id": "stop", "label": { "en": "Stop all work at once", "hi": "सारा काम तुरंत रोकें", "sat": "ᱡᱚᱛᱚ ᱠᱟᱹᱢᱤ ᱩᱱᱤ ᱚᱠᱛᱮ ᱵᱚᱸᱫᱚ" } },
+        { "id": "spark", "label": { "en": "No switches, no phones, no flames", "hi": "न स्विच, न फोन, न आग", "sat": "ᱥᱩᱭᱤᱪ ᱟᱞᱚ, ᱯᱷᱚᱱ ᱟᱞᱚ, ᱥᱮᱸᱜᱮᱞ ᱟᱞᱚ" } },
+        { "id": "alert", "label": { "en": "Alert everyone and move upwind", "hi": "सबको बताएं और हवा के विरुद्ध जाएं", "sat": "ᱦᱚᱲ ᱠᱷᱚᱵᱚᱨ ᱟᱨ ᱦᱚᱭ ᱵᱤᱨᱩᱫᱷ ᱥᱮᱫ ᱪᱟᱞᱟᱜ" } },
+        { "id": "report", "label": { "en": "Report to the supervisor", "hi": "पर्यवेक्षक को रिपोर्ट करें", "sat": "ᱯᱟᱨᱵᱮᱠᱷᱚᱠ ᱴᱷᱮᱱ ᱨᱤᱯᱚᱴ" } }
+      ],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": ["stop", "spark", "alert", "report"],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "g5",
+      "type": "AR_EVIDENCE",
+      "prompt": { "en": "In the AR task you found the gas cylinder.", "hi": "AR कार्य में आपने गैस सिलेंडर पाया।", "sat": "AR ᱠᱟᱹᱢᱤ ᱨᱮ ᱟᱢ ᱜᱮᱥ ᱥᱤᱞᱤᱱᱰᱟᱨ ᱧᱮᱞ ᱟᱠᱟᱫᱟ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": "ar_cylinder"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "moduleId": "machinery",
+  "version": 3,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "m1",
+      "type": "MC",
+      "prompt": { "en": "Ravi's glove tip gets pulled toward a running roller. His FIRST move must be:", "hi": "रवि के दस्ताने का सिरा चलती रोलर की ओर खिंच रहा है। उसकी पहली हरकत हो:", "sat": "ᱨᱟᱹᱵᱤᱭᱟᱜ ᱫᱟᱥᱛᱟᱱᱟ ᱪᱩᱴ ᱜᱷᱩᱨᱟᱹᱣ ᱨᱚᱞᱟᱨ ᱥᱮᱫ ᱟᱹᱜᱩᱜ ᱠᱟᱱᱟ. ᱟᱡᱟᱜ ᱯᱟᱹᱦᱤᱞ ᱦᱩᱞᱟᱹᱣ ᱫᱚ:" },
+      "points": 20,
+      "options": [
+        { "id": "yank", "label": { "en": "Yank his hand back with full force", "hi": "पूरी ताकत से हाथ खींच लें", "sat": "ᱫᱟᱲᱮ ᱛᱮ ᱛᱤ ᱟᱹᱜᱩᱭ ᱜᱤᱰᱤ" } },
+        { "id": "estop", "label": { "en": "Hit the emergency stop at once", "hi": "तुरंत आपातकालीन स्टॉप दबाएं", "sat": "ᱩᱱᱤ ᱚᱠᱛᱮ ᱟᱯᱟᱛ ᱵᱚᱸᱫᱚ ᱛᱮᱵᱮ" } },
+        { "id": "reverse", "label": { "en": "Put the machine in reverse gear", "hi": "मशीन रिवर्स गियर में डालें", "sat": "ᱢᱮᱥᱤᱱ ᱩᱞᱴᱟᱹ ᱪᱟᱹᱞᱩ" } },
+        { "id": "oil", "label": { "en": "Pour oil to loosen the glove", "hi": "दस्ताना छुड़ाने को तेल डालें", "sat": "ᱫᱟᱥᱛᱟᱱᱟ ᱚᱰᱚᱜ ᱞᱟᱹᱜᱤᱫ ᱥᱩᱱᱩᱢ ᱵᱟᱦᱟ" } }
+      ],
+      "answer": 1,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "m2",
+      "type": "MC",
+      "prompt": { "en": "The guard was taken off for cleaning and the shift restarted without it. You should:", "hi": "सफाई के लिए गार्ड हटाया गया और बिना गार्ड शिफ्ट शुरू हो गई। आपको:", "sat": "ᱥᱟᱯᱷᱟ ᱞᱟᱹᱜᱤᱫ ᱜᱟᱨᱰ ᱚᱪᱚᱜ ᱮᱱᱟ ᱟᱨ ᱵᱮᱜᱚᱨ ᱜᱟᱨᱰ ᱥᱤᱯᱷᱴ ᱮᱦᱚᱵ ᱮᱱᱟ. ᱟᱢ ᱫᱚ:" },
+      "points": 20,
+      "options": [
+        { "id": "careful", "label": { "en": "Work carefully and stay extra alert", "hi": "सावधानी से अतिरिक्त सतर्क रहकर काम करें", "sat": "ᱥᱟᱹᱦᱤᱡ ᱛᱮ ᱧᱮᱞ ᱠᱟᱛᱮᱜ ᱠᱟᱹᱢᱤ" } },
+        { "id": "refit", "label": { "en": "Stop the machine and refit the guard before work", "hi": "काम से पहले मशीन रोककर गार्ड लगाएं", "sat": "ᱠᱟᱹᱢᱤ ᱞᱟᱦᱟᱸ ᱢᱮᱥᱤᱱ ᱵᱚᱸᱫᱚ ᱠᱟᱛᱮᱜ ᱜᱟᱨᱰ ᱫᱚᱦᱚ" } },
+        { "id": "cloth", "label": { "en": "Cover the open part with a cloth", "hi": "खुले हिस्से को कपड़े से ढंक दें", "sat": "ᱦᱟᱹᱴᱤᱝ ᱞᱩᱜᱽᱲᱤ ᱛᱮ ᱮᱥᱮᱫ" } },
+        { "id": "watcher", "label": { "en": "Ask a friend to watch while you work", "hi": "दोस्त को निगरानी पर लगाकर काम करें", "sat": "ᱜᱟᱛᱮ ᱧᱮᱞ ᱨᱮ ᱫᱚᱦᱚ ᱠᱟᱛᱮᱜ ᱠᱟᱹᱢᱤ" } }
+      ],
+      "answer": 1,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "m3",
+      "type": "TRUE_FALSE",
+      "prompt": { "en": "Only the worker who fixed a lock may remove it — even the supervisor must wait.", "hi": "जिस मजदूर ने ताला लगाया, वही हटाएगा — पर्यवेक्षक को भी रुकना होगा।", "sat": "ᱚᱠᱚᱭ ᱠᱟᱹᱢᱤᱭᱟᱹ ᱪᱟᱹᱵᱤ ᱫᱚᱦᱚ ᱟᱠᱟᱫᱟᱭ, ᱩᱱᱤ ᱜᱮᱭ ᱚᱪᱚᱜᱼᱟ — ᱯᱟᱨᱵᱮᱠᱷᱚᱠ ᱦᱚᱸᱭ ᱛᱟᱸᱜᱤᱭᱟ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": true,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "m4",
+      "type": "SEQ",
+      "prompt": { "en": "Put the full lock-out in the correct order.", "hi": "पूरा लॉक-आउट सही क्रम में लगाएं।", "sat": "ᱯᱩᱨᱟᱹ ᱞᱚᱠᱼᱟᱣᱴ ᱴᱷᱤᱠ ᱥᱮᱨᱮᱧ ᱨᱮ ᱫᱚᱦᱚ ᱢᱮ." },
+      "points": 20,
+      "options": [
+        { "id": "notify", "label": { "en": "Notify the supervisor", "hi": "पर्यवेक्षक को सूचित करें", "sat": "ᱯᱟᱨᱵᱮᱠᱷᱚᱠ ᱠᱷᱚᱵᱚᱨ" } },
+        { "id": "shut", "label": { "en": "Shut the machine down", "hi": "मशीन बंद करें", "sat": "ᱢᱮᱥᱤᱱ ᱵᱚᱸᱫᱚ" } },
+        { "id": "isolate", "label": { "en": "Isolate all energy sources", "hi": "सभी ऊर्जा स्रोत अलग करें", "sat": "ᱡᱚᱛᱚ ᱮᱱᱟᱨᱡᱤ ᱵᱷᱮᱜᱟᱨ" } },
+        { "id": "lock", "label": { "en": "Lock the switch with your own lock", "hi": "अपने ताले से स्विच लॉक करें", "sat": "ᱟᱢᱟᱜ ᱪᱟᱹᱵᱤ ᱛᱮ ᱥᱩᱭᱤᱪ ᱵᱚᱸᱫᱚ" } },
+        { "id": "verify", "label": { "en": "Verify the machine cannot start", "hi": "जांचें कि मशीन शुरू न हो सके", "sat": "ᱧᱮᱞ ᱢᱮ ᱢᱮᱥᱤᱱ ᱵᱟᱝ ᱪᱟᱹᱞᱩᱜᱼᱟ" } }
+      ],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": ["notify", "shut", "isolate", "lock", "verify"],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "m5",
+      "type": "AR_EVIDENCE",
+      "prompt": { "en": "In the AR task you found the machinery guard.", "hi": "AR कार्य में आपने मशीन गार्ड पाया।", "sat": "AR ᱠᱟᱹᱢᱤ ᱨᱮ ᱟᱢ ᱢᱮᱥᱤᱱ ᱜᱟᱨᱰ ᱧᱮᱞ ᱟᱠᱟᱫᱟ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": "ar_guard"
+    }
+  ]
+}

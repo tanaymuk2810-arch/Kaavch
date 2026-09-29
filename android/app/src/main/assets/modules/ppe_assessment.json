@@ -1,0 +1,86 @@
+{
+  "moduleId": "ppe",
+  "version": 3,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "p1",
+      "type": "MC",
+      "prompt": { "en": "Kishore is grinding and sparks fly at his face. His goggles are in his pocket. He must:", "hi": "किशोर ग्राइंडिंग कर रहा है, चिंगारियां चेहरे पर आ रही हैं। चश्मा जेब में है। उसे:", "sat": "ᱠᱤᱥᱚᱨ ᱜᱨᱟᱭᱤᱱᱰᱤᱝᱮᱫᱟᱭ ᱟᱨ ᱥᱤᱨᱡᱚᱱ ᱢᱮᱫᱟᱦᱟ ᱥᱮᱫ ᱦᱤᱡᱩᱜ ᱠᱟᱱᱟ. ᱪᱚᱥᱢᱟ ᱡᱮᱵᱤ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ. ᱩᱱᱤ ᱫᱚ:" },
+      "points": 20,
+      "options": [
+        { "id": "squint", "label": { "en": "Squint hard and keep grinding", "hi": "आंखें भींचकर जारी रखें", "sat": "ᱢᱮᱫ ᱤᱪᱤᱡ ᱠᱟᱛᱮᱜ ᱪᱟᱹᱞᱩ ᱫᱚᱦᱚ" } },
+        { "id": "stopwear", "label": { "en": "Stop, wear the goggles, then resume", "hi": "रुकें, चश्मा पहनें, फिर शुरू करें", "sat": "ᱛᱤᱸᱜᱩ, ᱪᱚᱥᱢᱟ ᱦᱚᱨᱚᱜ, ᱤᱱᱟᱹ ᱮᱦᱚᱵ" } },
+        { "id": "turn", "label": { "en": "Turn his face away while grinding on", "hi": "ग्राइंड करते हुए मुंह फेर लें", "sat": "ᱜᱨᱟᱭᱤᱱᱰ ᱚᱠᱛᱮ ᱢᱚᱪᱟ ᱟᱹᱜᱩᱭ" } },
+        { "id": "later", "label": { "en": "Borrow someone's goggles later", "hi": "बाद में किसी का चश्मा मांग लें", "sat": "ᱛᱟᱭᱚᱢ ᱚᱠᱚᱭᱟᱜ ᱪᱚᱥᱢᱟ ᱦᱟᱛᱟᱣ" } }
+      ],
+      "answer": 1,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "p2",
+      "type": "MC",
+      "prompt": { "en": "Meena's helmet strap hangs loose under her chin. The right fix is:", "hi": "मीना के हेलमेट का पट्टा ठुड्डी के नीचे ढीला लटक रहा है। सही काम है:", "sat": "ᱢᱤᱱᱟᱭᱟᱜ ᱦᱮᱞᱢᱮᱴ ᱯᱟᱴᱟ ᱪᱤᱵᱩᱠ ᱞᱟᱛᱟᱨ ᱨᱮ ᱰᱤᱞᱟᱹ ᱞᱮᱸᱫᱮᱜ ᱠᱟᱱᱟ. ᱴᱷᱤᱠ ᱠᱟᱹᱢᱤ ᱫᱚ:" },
+      "points": 20,
+      "options": [
+        { "id": "remove", "label": { "en": "Remove the strap, it gets in the way", "hi": "पट्टा निकाल दें, बाधा बनता है", "sat": "ᱯᱟᱴᱟ ᱚᱪᱚᱜ ᱢᱮ, ᱮᱥᱮᱫᱮᱫᱟ" } },
+        { "id": "cap", "label": { "en": "Wear a cloth cap instead", "hi": "इसके बजाय कपड़े की टोपी पहनें", "sat": "ᱚᱱᱟ ᱵᱚᱫᱚᱞ ᱛᱮ ᱞᱩᱜᱽᱲᱤ ᱴᱩᱯᱤ ᱦᱚᱨᱚᱜ" } },
+        { "id": "tighten", "label": { "en": "Tighten it snugly under the chin", "hi": "ठुड्डी के नीचे कसकर बांधें", "sat": "ᱪᱤᱵᱩᱠ ᱞᱟᱛᱟᱨ ᱨᱮ ᱠᱥᱟᱣ ᱠᱟᱛᱮᱜ ᱛᱚᱞ" } }
+      ],
+      "answer": 2,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "p3",
+      "type": "TRUE_FALSE",
+      "prompt": { "en": "A taped-up cracked helmet protects as well as a new one.", "hi": "टेप लगा टूटा हेलमेट नए जैसा ही बचाता है।", "sat": "ᱴᱮᱯ ᱛᱚᱞ ᱟᱠᱟᱱ ᱨᱟᱹᱯᱩᱫ ᱦᱮᱞᱢᱮᱴ ᱱᱟᱶᱟ ᱞᱮᱠᱟ ᱵᱟᱧᱪᱟᱣᱟ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "p4",
+      "type": "MATCH",
+      "prompt": { "en": "Match each item to its correct use.", "hi": "हर वस्तु को उसके सही उपयोग से मिलाएं।", "sat": "ᱢᱤᱢᱤᱫ ᱡᱤᱱᱤᱥ ᱴᱷᱤᱠ ᱵᱮᱵᱷᱟᱨ ᱥᱟᱶ ᱡᱚᱲᱟᱣ ᱢᱮ." },
+      "points": 20,
+      "options": [
+        { "id": "head", "label": { "en": "Protects the head", "hi": "सिर की रक्षा करता है", "sat": "ᱵᱚᱦᱚᱜ ᱨᱩᱠᱷᱟᱹᱭᱟᱹ" } },
+        { "id": "fire", "label": { "en": "Puts out small fires", "hi": "छोटी आग बुझाता है", "sat": "ᱦᱩᱰᱤᱧ ᱥᱮᱸᱜᱮᱞ ᱜᱚᱡ" } },
+        { "id": "bleed", "label": { "en": "Covers bleeding wounds", "hi": "खून वाले घाव ढंकता है", "sat": "ᱢᱟᱭᱟᱢ ᱜᱷᱟᱣ ᱮᱥᱮᱫ" } },
+        { "id": "leak", "label": { "en": "Marks a leak-danger zone", "hi": "रिसाव-खतरा क्षेत्र बताता है", "sat": "ᱡᱷᱚᱨᱚᱜ ᱵᱤᱯᱚᱫ ᱴᱷᱟᱶ ᱩᱫᱩᱜ" } }
+      ],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {
+        "models/helmet.glb": "head",
+        "models/extinguisher.glb": "fire",
+        "models/firstaid.glb": "bleed",
+        "models/gas_cylinder.glb": "leak"
+      },
+      "arTaskId": null
+    },
+    {
+      "id": "p5",
+      "type": "AR_EVIDENCE",
+      "prompt": { "en": "In the AR task you found the helmet.", "hi": "AR कार्य में आपने हेलमेट पाया।", "sat": "AR ᱠᱟᱹᱢᱤ ᱨᱮ ᱟᱢ ᱦᱮᱞᱢᱮᱴ ᱧᱮᱞ ᱟᱠᱟᱫᱟ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": "ar_helmet"
+    }
+  ]
+}

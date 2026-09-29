@@ -1,0 +1,62 @@
+[versions]
+agp = "8.7.3"
+kotlin = "2.0.21"
+ksp = "2.0.21-1.0.28"
+coreKtx = "1.15.0"
+activityCompose = "1.9.3"
+composeBom = "2024.12.01"
+lifecycle = "2.8.7"
+navigationCompose = "2.8.5"
+room = "2.6.1"
+camerax = "1.4.1"
+zxingEmbedded = "4.3.0"
+zxingCore = "3.5.3"
+sceneview = "2.1.1"
+serialization = "1.7.3"
+coil = "2.7.0"
+junit = "4.13.2"
+androidxJunit = "1.2.1"
+espresso = "3.6.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material-icons = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+androidx-camerax-core = { group = "androidx.camera", name = "camera-core", version.ref = "camerax" }
+androidx-camerax-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camerax" }
+androidx-camerax-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camerax" }
+androidx-camerax-view = { group = "androidx.camera", name = "camera-view", version.ref = "camerax" }
+
+zxing-embedded = { group = "com.journeyapps", name = "zxing-android-embedded", version.ref = "zxingEmbedded" }
+zxing-core = { group = "com.google.zxing", name = "core", version.ref = "zxingCore" }
+
+sceneview-ar = { group = "io.github.sceneview", name = "arsceneview", version.ref = "sceneview" }
+
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

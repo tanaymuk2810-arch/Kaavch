@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Santali (Ol Chiki) localisation — LIVE TEMPLATE
+  -------------------------------------------------
+  The strings below are placeholders that MUST be reviewed and translated
+  by a native Santali speaker before release. Missing keys automatically
+  fall back to Hindi (values-hi) then English (values).
+  The Ol Chiki font (Noto Sans Ol Chiki) is bundled in res/font so the
+  script renders on any Android 10+ device.
+  Confident entries used today:
+    ᱡᱚᱦᱟᱨ  = Jôhar (greeting/hello) — used in home_greeting
+-->
+<resources>
+    <string name="app_name">ᱠᱟᱵᱟᱪ</string>
+    <string name="app_tagline">ᱡᱷᱟᱨᱠᱷᱚᱸᱰ ᱠᱟᱹᱢᱤᱭᱟᱹ ᱞᱟᱹᱜᱤᱫ AR ᱠᱟᱵᱟᱪ ᱟᱹᱯ</string>
+
+    <!-- Common -->
+    <string name="next">Aage</string>
+    <string name="back">Pichha</string>
+    <string name="continue">Kedala</string>
+    <string name="cancel">Badala</string>
+    <string name="retry">Ari choroseda</string>
+    <string name="finish">Sesi</string>
+    <string name="save">Boco</string>
+    <string name="close">Bondho kedi</string>
+    <string name="yes">Hē̃</string>
+    <string name="no">Ăhō̃</string>
+    <string name="ok">Thuik</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+    <string name="loading">Sorǎ jalok</string>
+    <string name="error">Kicic ačor̃a kelu</string>
+    <string name="language">Bhasha</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Suraksha sehed. Maha sertifiket boco.</string>
+    <string name="onboarding_sub">Maha bhasha re interactive AR trenara. Internet pinnai khon bikash.</string>
+    <string name="onboarding_start">ᱮᱦᱚᱵ ᱢᱮ</string>
+    <string name="onboarding_register">Mazdoor registro</string>
+    <string name="onboarding_login">Adia maha account atoa</string>
+
+    <!-- Registration -->
+    <string name="reg_title">Mazdoor registro</string>
+    <string name="reg_name">Bhodol mula</string>
+    <string name="reg_name_hint">Lekhaka: Ram Soren</string>
+    <string name="reg_phone">Mobile nomro</string>
+    <string name="reg_phone_hint">10-gidhipa nomro</string>
+    <string name="reg_site">Kaj thā̃i</string>
+    <string name="reg_site_hint">Thā̃i mula / kam pani</string>
+    <string name="reg_district">Jilla</string>
+    <string name="reg_language">ᱯᱟᱹᱨᱥᱤ</string>
+    <string name="reg_submit">Registro aka calakha okoa</string>
+    <string name="reg_invalid">Jariat data bhorono</string>
+    <string name="reg_created_offline">Offline registro hõen. Online lagi sync jokha.</string>
+
+    <!-- Home -->
+    <string name="home_greeting">ᱡᱚᱦᱟᱨ, %1$s!</string>
+    <string name="home_your_modules">Maha trenara modul</string>
+    <string name="home_my_certificates">Maha sertifiket</string>
+    <string name="home_sync_now">Ekhomade sync</string>
+    <string name="home_pending_sync">Sync hẽlsaf — Wi-Fi re ketam</string>
+    <string name="home_profile">Profile</string>
+    <string name="home_cert_count">%1$d sertifiket sylakea</string>
+
+    <!-- Modules -->
+    <string name="module_fire_title">Sel̃a musure dhaja bandho</string>
+    <string name="module_fire_sub">Dahra okoa, sel̃a sirkao, dhaja bandho seid</string>
+    <string name="module_gas_title">Gas kurse penjiye thā̃i</string>
+    <string name="module_gas_sub">Bipod thā̃i, PPE celeka, buddy-system rejeya</string>
+    <string name="module_machinery_title">Machine kapor suraksha</string>
+    <string name="module_machinery_sub">Pahira, lock-out/tag-out, gejhõ majin</string>
+    <string name="module_ppe_title">PPE gupac mula</string>
+    <string name="module_ppe_sub">Mula suraksha kapor celeka</string>
+    <string name="module_emergency_title">Boyglu ayo keliya rejeya</string>
+    <string name="module_emergency_sub">Lasthu keliya, rupur̃a, bachha kuri</string>
+    <string name="module_status_not_started">Calakha.</string>
+    <string name="module_status_in_progress">Gesed re.</string>
+    <string name="module_status_passed">Unnatin hoyena.</string>
+    <string name="module_status_failed">Phelan kana.</string>
+    <string name="module_not_installed">Modul kategori bhaktam nana.</string>
+    <string name="module_best">Bhala ank: %1$d%%</string>
+
+    <!-- AR Player -->
+    <string name="ar_permission_title">Kamera anumati yetai</string>
+    <string name="ar_permission_sub">AR trenara maha phone camera re sutam leka suraksha khojaka onha.</string>
+    <string name="ar_unsupported">E device re AR nana. Sadha trenara mode re calakha.</string>
+    <string name="ar_find_plane">Thali skan kate phone gitegitekin sagaidik</string>
+    <string name="ar_place_object">Suraksha vastu thape kate thali re tap</string>
+    <string name="ar_task_hint">Maha cõwã re &#8220;%1$s&#8221; dui aka tapoko</string>
+    <string name="ar_task_correct">Mone! Henda bhala.</string>
+    <string name="ar_task_wrong">Mone nena. Mula vastu dui.</string>
+    <string name="ar_task_tap">Chinhko vastu tap</string>
+    <string name="ar_next_task">Aage kaj</string>
+    <string name="ar_instruction">Nirdeš</string>
+    <string name="ar_exit">Modul kadae</string>
+    <string name="ar_progress">Kaj %1$d / %2$d</string>
+
+    <!-- Assessment -->
+    <string name="assess_title">Mulyankan</string>
+    <string name="assess_intro">%1$s sesa kate prasno rupo. Pass ank: %2$d%%.</string>
+    <string name="assess_question">Prasno %1$d / %2$d</string>
+    <string name="assess_submit">Rupo geyaok</string>
+    <string name="assess_next">Aage</string>
+    <string name="assess_passed">Jonok — maham unnatin hoyena!</string>
+    <string name="assess_failed">Ank pass sima khon khoypem. Modul araji sehedari chorosho.</string>
+    <string name="assess_score">Maha ank: %1$d%%</string>
+    <string name="assess_retry">Ari mulyankan</string>
+    <string name="assess_review">Modul ari gujumi</string>
+    <string name="assess_get_cert">Maha sertifiket boco</string>
+    <string name="assess_seq_hint">Mone seid re option tego.</string>
+    <string name="assess_ar_done">E prasno maha modul re AR kaj khon check hõen.</string>
+    <string name="assess_ar_pending">AR kaj abi pura nãĩ kail̃a</string>
+    <string name="assess_ar_pending_hint">Pehle training modul re AR kriyã pura kailõl, taren eya arai phiri ak.</string>
+    <string name="assess_match_done">Arakhõ jora milen kail̃a.</string>
+    <string name="assess_match_pending">Milan hese bãki jora: %1$d</string>
+
+    <!-- Certificate -->
+    <string name="cert_title">Trenara sesa sertifiket</string>
+    <string name="cert_issued_to">Akokate</string>
+    <string name="cert_module">Ses modul</string>
+    <string name="cert_score">Ank</string>
+    <string name="cert_issued_on">Atar disom</string>
+    <string name="cert_site">Thā̃i</string>
+    <string name="cert_no">Sertifiket nomro</string>
+    <string name="cert_generate">Sertifiket tiar</string>
+    <string name="cert_generated_offline">Offline tiar hõen. Device re hash-chain ar signature khon jototo.</string>
+    <string name="cert_scan_qr">Jototo kate QR skan</string>
+    <string name="cert_share">Sertifiket bilao</string>
+    <string name="cert_save">Device re boco</string>
+    <string name="cert_verify_error">Sertifiket jototo barea nena</string>
+    <string name="cert_chain_verified">Device re chain jototo hõen</string>
+
+    <!-- Data export -->
+    <string name="export_title">Site data export</string>
+    <string name="export_hint">Mazdoor, tren araji ar sertifiket kate JSON file re Downloads re boco. Repot araji jototo kate desktop dashboard re import hõen — atho offline, server nena.</string>
+    <string name="export_action">Downloads re export</string>
+    <string name="export_done">Ete boco hõen:</string>
+
+    <!-- Profile / settings -->
+    <string name="profile_title">Maha profile</string>
+    <string name="profile_name">Mula</string>
+    <string name="profile_phone">Mobile</string>
+    <string name="profile_site">Thā̃i</string>
+    <string name="profile_district">Jilla</string>
+    <string name="profile_language">Bhasha</string>
+    <string name="profile_sync_status">Sync sthiti</string>
+    <string name="profile_logout">Log out</string>
+    <string name="profile_logout_confirm">E device khon e mazdoor erokh kate?</string>
+    <string name="settings_title">Seting</string>
+    <string name="settings_storage">Devlodo modul</string>
+    <string name="settings_verify_qr">Sertifiket jototo</string>
+
+    <!-- Verification camera -->
+    <string name="verify_title">Sertifiket QR skan</string>
+    <string name="verify_valid">Mone — sertifiket jototo hõen</string>
+    <string name="verify_invalid">Awala — ledger re nana akam hõokhna sutak</string>
+    <string name="verify_revoked">Botanak — sertifiket ketlikas</string>
+</resources>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7F1D1D"/>
+      <stop offset="1" stop-color="#450A0A"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#bg)"/>
+  <polyline points="0,120 60,120 76,96 92,140 108,104 124,120 190,120 206,96 222,140 238,104 254,120 320,120" fill="none" stroke="#F7C55C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+  <g>
+    <rect x="196" y="52" width="88" height="72" rx="12" fill="#F5F5F4"/>
+    <rect x="196" y="52" width="88" height="72" rx="12" fill="none" stroke="#CBD5E1" stroke-width="3"/>
+    <rect x="228" y="66" width="24" height="44" rx="4" fill="#C62828"/>
+    <rect x="214" y="80" width="52" height="16" rx="4" fill="#C62828"/>
+    <rect x="206" y="40" width="68" height="14" rx="7" fill="#0F6B3A"/>
+  </g>
+  <g>
+    <circle cx="72" cy="52" r="24" fill="none" stroke="#F7C55C" stroke-width="4"/>
+    <path d="M72 40 v24 M60 52 h24" stroke="#F7C55C" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <rect x="0" y="158" width="320" height="22" fill="#1F0808"/>
+  <text x="16" y="173" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#F7C55C">EMERGENCY · FIRST AID</text>
+</svg>

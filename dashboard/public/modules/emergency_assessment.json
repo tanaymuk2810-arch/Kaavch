@@ -1,0 +1,80 @@
+{
+  "moduleId": "emergency",
+  "version": 3,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "e1",
+      "type": "MC",
+      "prompt": { "en": "Mohan touches a live wire and collapses. Your FIRST act is:", "hi": "मोहन बिजली का तार छूकर गिर पड़ा। आपकी पहली हरकत है:", "sat": "ᱢᱚᱦᱚᱱ ᱵᱤᱡᱽᱞᱤ ᱛᱟᱨ ᱥᱟᱵ ᱠᱟᱛᱮᱜ ᱜᱤᱨᱤ ᱟᱠᱟᱱᱟ. ᱟᱢᱟᱜ ᱯᱟᱹᱦᱤᱞ ᱦᱩᱞᱟᱹᱣ ᱫᱚ:" },
+      "points": 20,
+      "options": [
+        { "id": "grab", "label": { "en": "Grab his hand and pull him away", "hi": "उसका हाथ पकड़कर खींचें", "sat": "ᱛᱟᱨ ᱥᱟᱵ ᱠᱟᱛᱮᱜ ᱟᱹᱜᱩᱭ" } },
+        { "id": "power", "label": { "en": "Cut the power, separate him with dry wood", "hi": "बिजली काटें, सूखी लकड़ी से अलग करें", "sat": "ᱵᱤᱡᱽᱞᱤ ᱵᱚᱸᱫᱚ, ᱨᱚᱦᱚᱲ ᱥᱟᱠᱟᱢ ᱛᱮ ᱵᱷᱮᱜᱟᱨ" } },
+        { "id": "water", "label": { "en": "Pour water on him", "hi": "उस पर पानी डालें", "sat": "ᱩᱱᱤ ᱪᱮᱛᱟᱱ ᱨᱮ ᱫᱟᱜ ᱵᱟᱦᱟ" } },
+        { "id": "slap", "label": { "en": "Slap his face to wake him", "hi": "थप्पड़ मारकर जगाएं", "sat": "ᱛᱟᱯᱟ ᱠᱟᱛᱮᱜ ᱨᱟᱠᱟᱵ" } }
+      ],
+      "answer": 1,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "e2",
+      "type": "TRUE_FALSE",
+      "prompt": { "en": "You should move a worker with a suspected spine injury.", "hi": "रीढ़ की हड्डी में चोट के संदिग्ध मजदूर को हिलाना चाहिए।", "sat": "ᱦᱚᱡᱚᱢ ᱦᱟᱹᱥᱩᱜ ᱦᱚᱲ ᱟᱞᱚᱢ ᱦᱩᱞᱟᱹᱣ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "e3",
+      "type": "MC",
+      "prompt": { "en": "Blood pours from a deep arm cut. Stop it with:", "hi": "हाथ के गहरे कट से खून बह रहा है। रोकें:", "sat": "ᱛᱤ ᱜᱷᱟᱣ ᱠᱷᱚᱱ ᱡᱚᱨ ᱢᱟᱭᱟᱢ ᱦᱤᱡᱩᱜ ᱠᱟᱱᱟ ᱵᱚᱸᱫᱷᱮ ᱞᱟᱹᱜᱤᱫ:" },
+      "points": 20,
+      "options": [
+        { "id": "dust", "label": { "en": "A handful of dust and soil", "hi": "मुट्ठी भर धूल-मिट्टी से", "sat": "ᱢᱩᱴᱷᱤ ᱛᱮ ᱫᱷᱩᱲᱤᱼᱦᱟᱥᱟ" } },
+        { "id": "cloth", "label": { "en": "Clean cloth pressed firmly on the wound", "hi": "घाव पर साफ कपड़ा कसकर दबाकर", "sat": "ᱪᱚᱠᱷᱟ ᱞᱩᱜᱽᱲᱤ ᱜᱷᱟᱣ ᱨᱮ ᱫᱟᱲᱮ ᱛᱮ ᱫᱟᱵᱟᱣ" } },
+        { "id": "nothing", "label": { "en": "Nothing — the doctor is coming", "hi": "कुछ नहीं — डॉक्टर आ रहा है", "sat": "ᱵᱟᱝᱼᱟ — ᱰᱟᱠᱴᱟᱨ ᱦᱤᱡᱩᱜ ᱠᱟᱱᱟᱭ" } }
+      ],
+      "answer": 1,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "e4",
+      "type": "SEQ",
+      "prompt": { "en": "Put the emergency response in the correct order.", "hi": "आपातकालीन प्रतिक्रिया सही क्रम में लगाएं।", "sat": "ᱟᱯᱟᱛ ᱠᱟᱹᱢᱤ ᱴᱷᱤᱠ ᱥᱮᱨᱮᱧ ᱨᱮ ᱫᱚᱦᱚ ᱢᱮ." },
+      "points": 20,
+      "options": [
+        { "id": "safe", "label": { "en": "Make the scene safe", "hi": "जगह सुरक्षित करें", "sat": "ᱴᱷᱟᱶ ᱥᱩᱨᱚᱠᱷᱟ" } },
+        { "id": "call", "label": { "en": "Call for help", "hi": "मदद बुलाएं", "sat": "ᱜᱚᱲᱚ ᱦᱚᱦᱚ" } },
+        { "id": "care", "label": { "en": "Give first aid", "hi": "प्राथमिक उपचार दें", "sat": "ᱯᱟᱹᱦᱤᱞ ᱩᱯᱪᱟᱹᱨ ᱮᱢ" } }
+      ],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": ["safe", "call", "care"],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "e5",
+      "type": "AR_EVIDENCE",
+      "prompt": { "en": "In the AR task you found the first-aid kit.", "hi": "AR कार्य में आपने प्राथमिक चिकित्सा किट पाई।", "sat": "AR ᱠᱟᱹᱢᱤ ᱨᱮ ᱟᱢ ᱯᱟᱹᱦᱤᱞ ᱩᱯᱪᱟᱹᱨ ᱠᱤᱴ ᱧᱮᱞ ᱟᱠᱟᱫᱟ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": "ar_firstaid"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A2E1B"/>
+      <stop offset="1" stop-color="#07341E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.72" r="0.55">
+      <stop offset="0" stop-color="#F7C55C" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E2571B" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#E2571B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#bg)"/>
+  <rect width="320" height="180" fill="url(#glow)"/>
+  <g>
+    <path d="M118 150 q-6 -34 14 -52 q-4 16 8 22 q0 -22 16 -34 q-2 14 8 20 q2 -12 12 -18 q0 26 -12 40 q-10 22 -30 22 q-12 0 -16 0 Z" fill="#E2571B"/>
+    <path d="M132 150 q-4 -24 10 -38 q-2 12 6 16 q0 -16 12 -24 q-1 10 6 14 q1 -8 8 -12 q0 18 -8 28 q-8 16 -20 16 q-10 0 -14 0 Z" fill="#F7C55C"/>
+    <path d="M144 150 q-2 -14 6 -22 q0 8 4 10 q0 -10 8 -14 q0 7 4 9 q0 -5 5 -7 q0 11 -5 17 q-5 7 -12 7 q-7 0 -10 0 Z" fill="#FFF3D6"/>
+  </g>
+  <g>
+    <rect x="216" y="72" width="52" height="78" rx="10" fill="#C62828"/>
+    <rect x="216" y="72" width="52" height="78" rx="10" fill="none" stroke="#8E1C1C" stroke-width="3"/>
+    <rect x="228" y="58" width="28" height="16" rx="4" fill="#475569"/>
+    <rect x="238" y="44" width="8" height="16" fill="#94A3B8"/>
+    <circle cx="242" cy="40" r="9" fill="none" stroke="#F7C55C" stroke-width="4"/>
+    <path d="M242 72 L268 60" stroke="#D97706" stroke-width="5" stroke-linecap="round"/>
+    <rect x="222" y="96" width="40" height="26" rx="4" fill="#F5F5F4"/>
+    <path d="M232 102 h20 M232 110 h14" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <rect x="0" y="158" width="320" height="22" fill="#042416"/>
+  <text x="16" y="173" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#F7C55C">FIRE &amp; EXPLOSION</text>
+</svg>

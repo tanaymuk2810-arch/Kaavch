@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">कावच</string>
+    <string name="app_tagline">झारखंड मजदूरों के लिए AR कावच ऐप</string>
+
+    <!-- Common -->
+    <string name="next">आगे</string>
+    <string name="back">पीछे</string>
+    <string name="continue">जारी रखें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="retry">फिर कोशिश करें</string>
+    <string name="finish">समाप्त</string>
+    <string name="save">सहेजें</string>
+    <string name="close">बंद करें</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="ok">ठीक है</string>
+    <string name="offline">ऑफ़लाइन</string>
+    <string name="online">ऑनलाइन</string>
+    <string name="loading">लोड हो रहा है…</string>
+    <string name="error">कुछ गड़बड़ हुई</string>
+    <string name="language">भाषा</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">सुरक्षा सीखें। अपना प्रमाणपत्र पाएं।</string>
+    <string name="onboarding_sub">अपनी भाषा में इंटरैक्टिव एआर प्रशिक्षण। बिना इंटरनेट के भी चलता है।</string>
+    <string name="onboarding_start">शुरू करें</string>
+    <string name="onboarding_register">मजदूर पंजीकरण</string>
+    <string name="onboarding_login">मेरा खाता पहले से है</string>
+
+    <!-- Registration -->
+    <string name="reg_title">मजदूर पंजीकरण</string>
+    <string name="reg_name">पूरा नाम</string>
+    <string name="reg_name_hint">जैसे: राम सोरेन</string>
+    <string name="reg_phone">मोबाइल नंबर</string>
+    <string name="reg_phone_hint">10 अंकों का नंबर</string>
+    <string name="reg_site">कार्य स्थल</string>
+    <string name="reg_site_hint">स्थल का नाम / कंपनी</string>
+    <string name="reg_district">जिला</string>
+    <string name="reg_language">भाषा</string>
+    <string name="reg_submit">पंजीकरण करें और शुरू करें</string>
+    <string name="reg_invalid">कृपया सभी जानकारी भरें</string>
+    <string name="reg_created_offline">ऑफ़लाइन पंजीकरण हो गया — ऑनलाइन होने पर सिंक होगा।</string>
+
+    <!-- Home -->
+    <string name="home_greeting">सलाम, %1$s!</string>
+    <string name="home_your_modules">आपके मॉड्यूल</string>
+    <string name="home_my_certificates">मेरे प्रमाणपत्र</string>
+    <string name="home_sync_now">अभी सिंक करें</string>
+    <string name="home_pending_sync">सिंक की प्रतीक्षा — वाई-फ़ाई से जुड़ें</string>
+    <string name="home_profile">प्रोफ़ाइल</string>
+    <string name="home_cert_count">%1$d प्रमाणपत्र प्राप्त</string>
+
+    <!-- Modules -->
+    <string name="module_fire_title">आग और विस्फोट से बचाव</string>
+    <string name="module_fire_sub">निकास की पहचान, आग बुझाने के उपयोग, और निकासी का क्रम</string>
+    <string name="module_gas_title">गैस रिसाव और सीमित स्थान</string>
+    <string name="module_gas_sub">खतरे वाले क्षेत्र, PPE चयन, बडी-सिस्टम प्रक्रिया</string>
+    <string name="module_machinery_title">मशीनरी एवं उपकरण सुरक्षा</string>
+    <string name="module_machinery_sub">गार्ड, लॉक-आउट/टैग-आउट, चलते हिस्से</string>
+    <string name="module_ppe_title">PPE और व्यक्तिगत सुरक्षा</string>
+    <string name="module_ppe_sub">सही सुरक्षा उपकरण चुनना और पहनना</string>
+    <string name="module_emergency_title">प्राथमिक चिकित्सा और आपातकाल</string>
+    <string name="module_emergency_sub">चोट की प्रतिक्रिया, रिपोर्टिंग, बचाव की मूल बातें</string>
+    <string name="module_status_not_started">शुरू नहीं किया</string>
+    <string name="module_status_in_progress">चल रहा है</string>
+    <string name="module_status_passed">उत्तीर्ण</string>
+    <string name="module_status_failed">अनुत्तीर्ण</string>
+    <string name="module_not_installed">मॉड्यूल सामग्री डाउनलोड नहीं है</string>
+    <string name="module_best">सर्वश्रेष्ठ अंक: %1$d%%</string>
+
+    <!-- AR Player -->
+    <string name="ar_permission_title">कैमरा अनुमति आवश्यक</string>
+    <string name="ar_permission_sub">एआर प्रशिक्षण आपके फ़ोन कैमरे से वास्तविक वातावरण पर सुरक्षा वस्तुएँ दिखाता है।</string>
+    <string name="ar_unsupported">इस डिवाइस पर एआर समर्थित नहीं है। सरल प्रशिक्षण मोड में चल रहा है।</string>
+    <string name="ar_find_plane">फ़र्श को स्कैन करने के लिए फ़ोन को धीरे-धीरे घुमाएँ</string>
+    <string name="ar_place_object">सुरक्षा वस्तु रखने के लिए फ़र्श पर टैप करें</string>
+    <string name="ar_task_hint">अपने आस-पास &#8220;%1$s&#8221; ढूंढें और उस पर टैप करें</string>
+    <string name="ar_task_correct">सही है! बहुत बढ़िया।</string>
+    <string name="ar_task_wrong">ठीक नहीं। सही वस्तु ढूंढें।</string>
+    <string name="ar_task_tap">चिह्नित वस्तु पर टैप करें</string>
+    <string name="ar_next_task">अगला कार्य</string>
+    <string name="ar_instruction">निर्देश</string>
+    <string name="ar_exit">मॉड्यूल से बाहर जाएं</string>
+    <string name="ar_progress">कार्य %1$d / %2$d</string>
+
+    <!-- Assessment -->
+    <string name="assess_title">मूल्यांकन</string>
+    <string name="assess_intro">%1$s पूरा करने के लिए प्रश्नों के उत्तर दें। उत्तीर्ण अंक: %2$d%%।</string>
+    <string name="assess_question">प्रश्न %1$d / %2$d</string>
+    <string name="assess_submit">उत्तर जमा करें</string>
+    <string name="assess_next">आगे</string>
+    <string name="assess_passed">बधाई — आप उत्तीर्ण हुए!</string>
+    <string name="assess_failed">अंक उत्तीर्ण सीमा से कम हैं। मॉड्यूल दोबारा पढ़ें और कोशिश करें।</string>
+    <string name="assess_score">आपका अंक: %1$d%%</string>
+    <string name="assess_retry">फिर मूल्यांकन करें</string>
+    <string name="assess_review">मॉड्यूल दोबारा देखें</string>
+    <string name="assess_get_cert">मेरा प्रमाणपत्र पाएं</string>
+    <string name="assess_seq_hint">सही क्रम में विकल्प टैप करें।</string>
+    <string name="assess_ar_done">यह प्रश्न मॉड्यूल में पूरे किए AR कार्य से जांचा गया है।</string>
+    <string name="assess_ar_pending">AR कार्य पूरा नहीं हुआ</string>
+    <string name="assess_ar_pending_hint">पहले प्रशिक्षण मॉड्यूल में AR गतिविधि पूरी करें, फिर यहाँ लौटें।</string>
+    <string name="assess_match_done">सभी जोड़े मिला लिए गए हैं।</string>
+    <string name="assess_match_pending">मिलाने के लिए शेष जोड़े: %1$d</string>
+
+    <!-- Certificate -->
+    <string name="cert_title">प्रशिक्षण पूर्णता प्रमाणपत्र</string>
+    <string name="cert_issued_to">जारी किया गया</string>
+    <string name="cert_module">पूर्ण किया गया मॉड्यूल</string>
+    <string name="cert_score">अंक</string>
+    <string name="cert_issued_on">जारी तिथि</string>
+    <string name="cert_site">स्थल</string>
+    <string name="cert_no">प्रमाणपत्र संख्या</string>
+    <string name="cert_generate">प्रमाणपत्र बनाएं</string>
+    <string name="cert_generated_offline">ऑफ़लाइन बनाया गया। डिवाइस पर ही हैश-चेन और हस्ताक्षर से सत्यापित।</string>
+    <string name="cert_scan_qr">सत्यापन के लिए यह QR स्कैन करें</string>
+    <string name="cert_share">प्रमाणपत्र साझा करें</string>
+    <string name="cert_save">डिवाइस में सहेजें</string>
+    <string name="cert_verify_error">प्रमाणपत्र सत्यापित नहीं हो सका</string>
+    <string name="cert_chain_verified">डिवाइस पर चेन सत्यापित</string>
+
+    <!-- Data export -->
+    <string name="export_title">साइट डेटा निर्यात करें</string>
+    <string name="export_hint">मजदूर, प्रशिक्षण प्रयास और प्रमाणपत्र को Downloads में एक JSON फ़ाइल के रूप में सहेजें। रिपोर्ट और सत्यापन के लिए इसे डेस्कटॉप डैशबोर्ड में आयात करें — पूरी तरह ऑफ़लाइन, कोई सर्वर नहीं।</string>
+    <string name="export_action">Downloads में निर्यात करें</string>
+    <string name="export_done">यहाँ सहेजा गया:</string>
+
+    <!-- Profile / settings -->
+    <string name="profile_title">मेरी प्रोफ़ाइल</string>
+    <string name="profile_name">नाम</string>
+    <string name="profile_phone">मोबाइल</string>
+    <string name="profile_site">स्थल</string>
+    <string name="profile_district">जिला</string>
+    <string name="profile_language">भाषा</string>
+    <string name="profile_sync_status">सिंक स्थिति</string>
+    <string name="profile_logout">लॉग आउट</string>
+    <string name="profile_logout_confirm">इस डिवाइस से इस मजदूर को हटाएं?</string>
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_storage">डाउनलोड किए गए मॉड्यूल</string>
+    <string name="settings_verify_qr">प्रमाणपत्र सत्यापित करें</string>
+
+    <!-- Verification camera -->
+    <string name="verify_title">प्रमाणपत्र QR स्कैन करें</string>
+    <string name="verify_valid">मान्य — प्रमाणपत्र सत्यापित</string>
+    <string name="verify_invalid">अमान्य — लेज़र में नहीं या हस्ताक्षर बेमेल</string>
+    <string name="verify_revoked">निरस्त — प्रमाणपत्र वापस ले लिया गया है</string>
+</resources>

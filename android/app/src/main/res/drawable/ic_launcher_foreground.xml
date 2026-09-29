@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- safety shield -->
+    <path
+        android:fillColor="#1B4965"
+        android:pathData="M54,7.9 L96.75,23.6 V54 C96.75,77 89.1,93.6 54,103.5 C18.9,93.6 11.25,77 11.25,54 V23.6 Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#A9BED6"
+        android:strokeWidth="4.5"
+        android:strokeAlpha="0.5"
+        android:pathData="M54,7.9 L96.75,23.6 V54 C96.75,77 89.1,93.6 54,103.5 C18.9,93.6 11.25,77 11.25,54 V23.6 Z" />
+    <!-- hazard bolt -->
+    <path
+        android:fillColor="#C97B5A"
+        android:pathData="M59.6,27 L33.75,63 H49.5 L45,85.5 L74.25,47.25 H58.5 Z" />
+</vector>

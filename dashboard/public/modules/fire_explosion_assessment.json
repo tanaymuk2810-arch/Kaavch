@@ -1,0 +1,82 @@
+{
+  "moduleId": "fire_explosion",
+  "version": 3,
+  "passMark": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "MC",
+      "prompt": { "en": "Bablu sees smoke rising from a waste bin while workers gather around. His most powerful FIRST action is:", "hi": "बबलू देखता है कचरे के डिब्बे से धुआं उठ रहा है और मजदूर जमा हो रहे हैं। उसका सबसे असरदार पहला काम है:", "sat": "ᱵᱟᱵᱽᱞᱩ ᱧᱮᱞᱮᱫᱟ ᱨᱚᱫᱤ ᱵᱤᱱ ᱠᱷᱚᱱ ᱫᱷᱩᱣᱟᱹ ᱨᱟᱠᱟᱵ ᱠᱟᱱᱟ ᱟᱨ ᱠᱟᱹᱢᱤᱭᱟᱹ ᱡᱟᱣᱨᱟ ᱟᱠᱟᱱᱟ. ᱟᱡᱟᱜ ᱡᱚᱛᱚ ᱠᱷᱚᱱ ᱫᱟᱲᱮᱭᱟᱱ ᱯᱟᱹᱦᱤᱞ ᱠᱟᱹᱢᱤ ᱫᱚ:" },
+      "points": 20,
+      "options": [
+        { "id": "shout", "label": { "en": "Shout 'FIRE!', press the alarm, guide people to the exit", "hi": "‘आग!’ चिल्लाएं, अलार्म दबाएं, लोगों को निकास तक ले जाएं", "sat": "ᱥᱮᱸᱜᱮᱞ ᱢᱮᱱᱛᱮ ᱦᱚᱦᱚ ᱢᱮ, ᱟᱞᱟᱨᱢ ᱛᱮᱵᱮ ᱢᱮ, ᱦᱚᱲ ᱫᱟᱹᱲ ᱥᱮᱫ ᱤᱫᱤ ᱢᱮ" } },
+        { "id": "water", "label": { "en": "Fetch a bucket of water and pour it on", "hi": "पानी की बाल्टी लाकर डालें", "sat": "ᱫᱟᱜ ᱵᱟᱹᱞᱴᱤ ᱟᱹᱜᱩ ᱠᱟᱛᱮᱜ ᱵᱟᱦᱟ" } },
+        { "id": "film", "label": { "en": "Take a video to show the supervisor later", "hi": "बाद में दिखाने के लिए वीडियो बनाएं", "sat": "ᱛᱟᱭᱚᱢ ᱩᱫᱩᱜ ᱞᱟᱹᱜᱤᱫ ᱵᱷᱤᱰᱤᱭᱚ ᱵᱮᱱᱟᱣ" } },
+        { "id": "run", "label": { "en": "Slip away quietly so no panic spreads", "hi": "चुपचाप निकल जाएं ताकि घबराहट न फैले", "sat": "ᱪᱩᱯᱪᱟᱯ ᱚᱰᱚᱠ ᱢᱮ ᱡᱟᱦᱟᱸ ᱵᱚᱛᱚᱨ ᱟᱞᱚ ᱯᱟᱥᱱᱟᱣ" } }
+      ],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "q2",
+      "type": "MC",
+      "prompt": { "en": "Pouring water on burning cooking oil will:", "hi": "जलते खाना-पकाने के तेल पर पानी डालने से:", "sat": "ᱡᱩᱞᱩᱜ ᱥᱩᱱᱩᱢ ᱨᱮ ᱫᱟᱜ ᱵᱟᱦᱟ ᱠᱷᱟᱱ:" },
+      "points": 20,
+      "options": [
+        { "id": "cool", "label": { "en": "Cool the oil down safely", "hi": "तेल सुरक्षित ठंडा होगा", "sat": "ᱥᱩᱱᱩᱢ ᱨᱮᱭᱟᱲ ᱦᱩᱭᱩᱜᱼᱟ" } },
+        { "id": "smoke", "label": { "en": "Only make some harmless smoke", "hi": "सिर्फ थोड़ा हानिरहित धुआं होगा", "sat": "ᱫᱷᱩᱣᱟᱹ ᱜᱮ ᱦᱩᱭᱩᱜᱼᱟ" } },
+        { "id": "spread", "label": { "en": "Blast burning oil outward and spread the fire", "hi": "जलता तेल फैलेगा और आग बढ़ेगी", "sat": "ᱡᱩᱞᱩᱜ ᱥᱩᱱᱩᱢ ᱯᱟᱥᱱᱟᱣᱚᱜᱼᱟ ᱟᱨ ᱥᱮᱸᱜᱮᱞ ᱞᱟᱹᱴᱩᱜᱼᱟ" } },
+        { "id": "nothing", "label": { "en": "Do nothing at all to the fire", "hi": "आग पर कोई असर नहीं होगा", "sat": "ᱪᱮᱫ ᱦᱚᱸ ᱵᱟᱝ ᱦᱩᱭᱩᱜᱼᱟ" } }
+      ],
+      "answer": 2,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "q3",
+      "type": "SEQ",
+      "prompt": { "en": "Arrange the PASS steps in the order you perform them.", "hi": "PASS के चरण करने के क्रम में लगाएं।", "sat": "PASS ᱫᱷᱟᱯ ᱠᱟᱹᱢᱤ ᱥᱮᱨᱮᱧ ᱛᱮ ᱫᱚᱦᱚ ᱢᱮ." },
+      "points": 20,
+      "options": [
+        { "id": "pull", "label": { "en": "Pull the pin", "hi": "पिन खींचें", "sat": "ᱯᱤᱱ ᱛᱟᱱᱟᱢ" } },
+        { "id": "aim", "label": { "en": "Aim at the base of the fire", "hi": "आग की जड़ पर निशाना", "sat": "ᱥᱮᱸᱜᱮᱞ ᱵᱩᱴᱟᱹ ᱨᱮ ᱱᱤᱥᱟᱹᱱᱟ" } },
+        { "id": "squeeze", "label": { "en": "Squeeze the handle", "hi": "हैंडल दबाएं", "sat": "ᱦᱮᱱᱰᱮᱞ ᱫᱟᱵᱟᱣ" } },
+        { "id": "sweep", "label": { "en": "Sweep side to side", "hi": "इधर-उधर घुमाएं", "sat": "ᱱᱚᱸᱰᱮᱼᱦᱚᱸᱰᱮ ᱟᱹᱜᱩᱭ" } }
+      ],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": ["pull", "aim", "squeeze", "sweep"],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "q4",
+      "type": "TRUE_FALSE",
+      "prompt": { "en": "An extinguisher works best when aimed at the top of the flames.", "hi": "लौ के सबसे ऊपर निशाना लगाने से बुझाने का यंत्र सबसे अच्छा काम करता है।", "sat": "ᱞᱟᱦᱟᱸ ᱪᱮᱛᱟᱱ ᱨᱮ ᱱᱤᱥᱟᱹᱱᱟ ᱠᱷᱟᱱ ᱢᱮᱥᱤᱱ ᱥᱚᱨᱮᱥ ᱠᱟᱹᱢᱤᱭᱟ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": null
+    },
+    {
+      "id": "q5",
+      "type": "AR_EVIDENCE",
+      "prompt": { "en": "In the AR task you operated the fire extinguisher correctly.", "hi": "AR कार्य में आपने अग्निशामक सही तरीके से चलाया।", "sat": "AR ᱠᱟᱹᱢᱤ ᱨᱮ ᱟᱢ ᱥᱮᱸᱜᱮᱞ ᱜᱚᱡ ᱢᱮᱥᱤᱱ ᱴᱷᱤᱠ ᱛᱮᱢ ᱪᱟᱹᱞᱩ ᱟᱠᱟᱫᱟ." },
+      "points": 20,
+      "options": [],
+      "answer": 0,
+      "answerBool": false,
+      "sequence": [],
+      "pairs": {},
+      "arTaskId": "ar_extinguisher"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "moduleId": "machinery",
+  "title": { "en": "Machinery & Equipment Safety", "hi": "मशीनरी एवं उपकरण सुरक्षा", "sat": "ᱢᱮᱥᱤᱱ ᱟᱨ ᱡᱤᱱᱤᱥ ᱥᱩᱨᱚᱠᱷᱟ" },
+  "subtitle": { "en": "Guards, lock-out/tag-out, moving parts", "hi": "गार्ड, लॉक-आउट/टैग-आउट, चलते हिस्से", "sat": "ᱜᱟᱨᱰ, ᱞᱚᱠᱼᱟᱣᱴ/ᱴᱮᱜᱼᱟᱣᱴ, ᱜᱷᱩᱨᱟᱹᱣ ᱦᱟᱹᱴᱤᱝ" },
+  "version": 1,
+  "passMark": 80,
+  "steps": [
+    {
+      "id": "mach_intro",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Guards save hands", "hi": "गार्ड हाथ बचाते हैं", "sat": "ᱜᱟᱨᱰ ᱛᱤ ᱵᱟᱧᱪᱟᱣᱟ" },
+        "body": { "en": "Machine guards, emergency stops and interlocks protect against trapped limbs. Never remove a guard while the machine is running. This module teaches you to spot guards and follow lock-out/tag-out.", "hi": "मशीन गार्ड, आपातकालीन स्टॉप और इंटरलॉक अंग फंसने से बचाते हैं। मशीन चलते समय गार्ड कभी न हटाएं। यह मॉड्यूल गार्ड पहचानना और लॉक-आउट/टैग-आउट सिखाता है।", "sat": "ᱢᱮᱥᱤᱱ ᱜᱟᱨᱰ, ᱟᱯᱟᱛ ᱵᱚᱸᱫᱚ ᱵᱚᱛᱚᱢ ᱟᱨ ᱤᱱᱴᱟᱨᱞᱚᱠ ᱛᱤᱼᱡᱟᱝᱜᱟ ᱠᱷᱚᱱ ᱵᱟᱧᱪᱟᱣᱟ. ᱢᱮᱥᱤᱱ ᱪᱟᱹᱞᱩ ᱚᱠᱛᱮ ᱜᱟᱨᱰ ᱟᱞᱚᱢ ᱚᱪᱚᱜ. ᱱᱚᱣᱟ ᱢᱚᱰᱩᱞ ᱨᱮ ᱜᱟᱨᱰ ᱧᱮᱞ ᱟᱨ ᱞᱚᱠᱼᱟᱣᱴ/ᱴᱮᱜᱼᱟᱣᱴ ᱪᱮᱫᱚᱜᱼᱟ." }
+      }
+    },
+    {
+      "id": "ar_guard",
+      "type": "AR",
+      "task": {
+        "taskId": "ar_guard",
+        "instruction": { "en": "Find the MACHINERY GUARD among the objects. Tap its button below.", "hi": "वस्तुओं में मशीन गार्ड ढूंढें। नीचे बटन दबाएं।", "sat": "ᱡᱤᱱᱤᱥ ᱠᱚ ᱢᱩᱫᱽ ᱨᱮ ᱢᱮᱥᱤᱱ ᱜᱟᱨᱰ ᱧᱮᱞ ᱠᱟᱛᱮᱜ ᱵᱚᱛᱚᱢ ᱛᱮᱵᱮ ᱢᱮ." },
+        "correctAsset": "models/machinery_guard.glb",
+        "distractors": [ "models/helmet.glb", "models/gas_cylinder.glb" ]
+      }
+    },
+    {
+      "id": "theory_loto",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Lock-out / Tag-out", "hi": "लॉक-आउट / टैग-आउट", "sat": "Lock-out / Tag-out" },
+        "body": { "en": "1. Notify the supervisor. 2. Shut down the machine. 3. Isolate energy (power, air, steam). 4. Lock the switch with your own lock. 5. Tag it with your name. 6. Verify it cannot start. Never remove another worker's lock.", "hi": "1. पर्यवेक्षक को सूचित करें। 2. मशीन बंद करें। 3. ऊर्जा अलग करें (बिजली, हवा, भाप)। 4. स्विच को अपने ताले से बंद करें। 5. अपना नाम टैग लगाएं। 6. जांचें कि मशीन शुरू नहीं हो सकती। किसी और का ताला कभी न हटाएं।", "sat": "᱑. ᱯᱟᱨᱵᱮᱠᱷᱚᱠ ᱠᱷᱚᱵᱚᱨ ᱮᱢ ᱢᱮ. ᱒. ᱢᱮᱥᱤᱱ ᱵᱚᱸᱫᱚ ᱢᱮ. ᱓. ᱮᱱᱟᱨᱡᱤ ᱵᱷᱮᱜᱟᱨ ᱢᱮ (ᱵᱤᱡᱽᱞᱤ, ᱦᱚᱭ, ᱵᱷᱟᱯ). ᱔. ᱟᱢᱟᱜ ᱪᱟᱹᱵᱤ ᱛᱮ ᱥᱩᱭᱤᱪ ᱵᱚᱸᱫᱚ ᱢᱮ. ᱕. ᱟᱢᱟᱜ ᱧᱩᱛᱩᱢ ᱴᱮᱜ ᱫᱚᱦᱚ ᱢᱮ. ᱖. ᱧᱮᱞ ᱢᱮ ᱢᱮᱥᱤᱱ ᱵᱟᱝ ᱪᱟᱹᱞᱩᱜᱼᱟ. ᱮᱴᱟᱜ ᱠᱟᱹᱢᱤᱭᱟᱹᱜ ᱪᱟᱹᱵᱤ ᱟᱞᱚᱢ ᱚᱪᱚᱜ." }
+      }
+    },
+    {
+      "id": "mach_summary",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Remember", "hi": "याद रखें", "sat": "ᱩᱫᱩᱜ ᱫᱚᱦᱚ ᱢᱮ" },
+        "body": { "en": "Keep guards on. Lock out before repair. Never bypass interlocks.", "hi": "गार्ड लगाए रखें। मरम्मत से पहले लॉक आउट करें। इंटरलॉक को कभी बायपास न करें।", "sat": "ᱜᱟᱨᱰ ᱫᱚᱦᱚ ᱠᱟᱛᱮᱜ ᱫᱚᱦᱚ ᱢᱮ. ᱢᱮᱨᱟᱢᱚᱛ ᱞᱟᱦᱟᱸ ᱨᱮ ᱞᱚᱠᱼᱟᱣᱴ ᱢᱮ. ᱤᱱᱴᱟᱨᱞᱚᱠ ᱟᱞᱚᱢ ᱵᱟᱭᱯᱟᱥ." }
+      }
+    }
+  ]
+}

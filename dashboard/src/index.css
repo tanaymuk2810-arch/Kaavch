@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Self-hosted Ol Chiki (Santali) — offline-safe, only 15KB per weight */
+@font-face {
+  font-family: "Noto Sans Ol Chiki";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/olchiki-ol-chiki-400.woff2") format("woff2");
+  unicode-range: U+1C50-1C7F;
+}
+@font-face {
+  font-family: "Noto Sans Ol Chiki";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/olchiki-ol-chiki-600.woff2") format("woff2");
+  unicode-range: U+1C50-1C7F;
+}
+@font-face {
+  font-family: "Noto Sans Ol Chiki";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/olchiki-ol-chiki-700.woff2") format("woff2");
+  unicode-range: U+1C50-1C7F;
+}
+
+body {
+  color: #2D3436;
+  font-family: Inter, "Noto Sans Ol Chiki", system-ui, sans-serif;
+  background: linear-gradient(180deg, #F5F6F8 0%, #E9EEF3 55%, #E2E9EF 100%);
+  background-attachment: fixed;
+}
+
+/* premium card hover physics */
+.lift {
+  transition: transform 0.32s cubic-bezier(0.34, 1.4, 0.64, 1), box-shadow 0.32s ease, border-color 0.25s ease;
+}
+.lift:hover {
+  transform: translateY(-6px);
+}
+.lift:active {
+  transform: translateY(-2px) scale(0.99);
+}
+.glow-hover:hover {
+  box-shadow: 0 18px 40px -14px rgba(11, 37, 69, 0.35), 0 4px 12px -4px rgba(11, 37, 69, 0.2);
+}
+.btn-push {
+  transition: transform 0.15s ease, box-shadow 0.25s ease, background-color 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 6px 16px -8px rgba(11, 37, 69, 0.5);
+}
+.btn-push:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 12px 24px -8px rgba(11, 37, 69, 0.45);
+}
+.btn-push:active {
+  transform: translateY(0) scale(0.98);
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.anim-floaty { animation: floaty 3.2s ease-in-out infinite; }
+
+@keyframes simUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+.anim-sim-up { animation: simUp 0.35s ease-out both; }
+
+@keyframes simPop {
+  0% { opacity: 0; transform: scale(0.92); }
+  60% { transform: scale(1.03); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.anim-sim-pop { animation: simPop 0.3s ease-out both; }
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(247, 197, 92, 0.55); }
+  50% { box-shadow: 0 0 24px 6px rgba(247, 197, 92, 0.3); }
+}
+.anim-glow { animation: glowPulse 1.8s ease-in-out infinite; }
+
+@keyframes ringIn {
+  from { transform: scale(0.4); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.anim-ring { animation: ringIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+
+@keyframes lineGrow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.anim-line { transform-origin: left; animation: lineGrow 0.5s ease-out both; }
+
+@keyframes shineSweep {
+  from { transform: translateX(-110%); }
+  to { transform: translateX(260%); }
+}
+.anim-shine { position: relative; overflow: hidden; }
+.anim-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 38%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transform: translateX(-110%);
+  animation: shineSweep 1.6s ease-in-out infinite;
+}
+
+@keyframes arrowBob {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+.anim-bob { animation: arrowBob 0.9s ease-in-out infinite; }

@@ -1,0 +1,51 @@
+{
+  "moduleId": "fire_explosion",
+  "title": { "en": "Fire & Explosion Response", "hi": "आग और विस्फोट से बचाव", "sat": "ᱥᱮᱸᱜᱮᱞ ᱟᱨ ᱵᱤᱥᱯᱷᱚᱴ" },
+  "subtitle": { "en": "Exit identification, extinguisher use, evacuation sequencing", "hi": "निकास की पहचान, आग बुझाने का उपयोग, निकासी का क्रम", "sat": "ᱫᱟᱹᱲ ᱦᱚᱨᱟ ᱧᱮᱞ, ᱥᱮᱸᱜᱮᱞ ᱜᱚᱡ ᱢᱮᱥᱤᱱ, ᱫᱟᱹᱲ ᱥᱮᱨᱮᱧ" },
+  "version": 1,
+  "passMark": 80,
+  "steps": [
+    {
+      "id": "fire_intro",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Why fire safety matters here", "hi": "यहां आग सुरक्षा क्यों जरूरी है", "sat": "ᱱᱚᱸᱰᱮ ᱥᱮᱸᱜᱮᱞ ᱥᱩᱨᱚᱠᱷᱟ ᱪᱮᱫᱟᱜ ᱞᱟᱹᱠᱛᱤ" },
+        "body": { "en": "Jharkhand mines, steel plants and mica units carry fire risk from coal dust, fuel and electrical faults. Knowing your exits and the PASS method is the difference between a small fire and a disaster. In this module you will identify exits and extinguishers using AR on your phone camera.", "hi": "झारखंड की खदानों, इस्पात संयंत्रों और अभ्रक इकाइयों में कोयला धूल, ईंधन और बिजली की खराबी से आग का खतरा रहता है। निकास पहचानना और PASS विधि जानना छोटी आग और बड़ी दुर्घटना के बीच का अंतर है। इस मॉड्यूल में आप फोन कैमरे से AR द्वारा निकास और बुझाने के उपकरण पहचानेंगे।", "sat": "ᱡᱷᱟᱨᱠᱷᱚᱸᱰ ᱨᱮᱱᱟᱜ ᱠᱷᱟᱫᱟᱱ, ᱤᱥᱯᱟᱛ ᱠᱟᱨᱠᱷᱟᱱᱟ ᱟᱨ ᱢᱟᱭᱠᱟ ᱡᱟᱭᱜᱟ ᱨᱮ ᱠᱚᱭᱞᱟ ᱫᱷᱩᱲᱤ, ᱛᱮᱞ ᱟᱨ ᱵᱤᱡᱽᱞᱤ ᱵᱷᱩᱞ ᱠᱷᱚᱱ ᱥᱮᱸᱜᱮᱞ ᱨᱮᱱᱟᱜ ᱵᱷᱚᱭ ᱢᱮᱱᱟᱜᱼᱟ. ᱫᱟᱹᱲ ᱦᱚᱨᱟ ᱵᱟᱰᱟᱭ ᱟᱨ PASS ᱦᱚᱨᱟ ᱥᱮᱪᱮᱫ — ᱦᱩᱰᱤᱧ ᱥᱮᱸᱜᱮᱞ ᱟᱨ ᱢᱟᱨᱟᱝ ᱵᱤᱯᱚᱫ ᱛᱟᱞᱟ ᱨᱮ ᱵᱷᱮᱜᱟᱨ ᱢᱮᱱᱟᱜᱼᱟ. ᱱᱚᱣᱟ ᱢᱚᱰᱩᱞ ᱨᱮ ᱢᱚᱵᱟᱭᱤᱞ ᱠᱮᱢᱮᱨᱟ AR ᱛᱮ ᱫᱟᱹᱲ ᱪᱤᱱᱦᱟᱹ ᱟᱨ ᱥᱮᱸᱜᱮᱞ ᱜᱚᱡ ᱢᱮᱥᱤᱱ ᱧᱮᱞ ᱟᱢ." }
+      }
+    },
+    {
+      "id": "theory_pass",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Using a fire extinguisher: PASS", "hi": "आग बुझाने का उपयोग: PASS", "sat": "ᱥᱮᱸᱜᱮᱞ ᱜᱚᱡ ᱢᱮᱥᱤᱱ ᱵᱮᱣᱦᱟᱨ: PASS" },
+        "body": { "en": "P — Pull the pin. A — Aim at the base of the fire. S — Squeeze the handle. S — Sweep from side to side. Never block the exit while fighting a fire, and always keep your back to the exit door.", "hi": "P — पिन खींचें। A — आग की जड़ पर निशाना लगाएं। S — हैंडल दबाएं। S — इधर-उधर घुमाएं। आग बुझाते समय निकास को कभी न रोकें, और हमेशा अपनी पीठ निकास द्वार की ओर रखें।", "sat": "P — ᱯᱤᱱ ᱛᱟᱱᱟᱢ ᱢᱮ. A — ᱥᱮᱸᱜᱮᱞ ᱵᱩᱴᱟᱹ ᱨᱮ ᱱᱤᱥᱟᱹᱱᱟ ᱢᱮ. S — ᱦᱮᱱᱰᱮᱞ ᱫᱟᱵᱟᱣ ᱢᱮ. S — ᱱᱚᱸᱰᱮᱼᱦᱚᱸᱰᱮ ᱟᱹᱜᱩᱭ ᱢᱮ. ᱥᱮᱸᱜᱮᱞ ᱞᱮᱠᱷᱟᱱ ᱫᱟᱹᱲ ᱦᱚᱨᱟ ᱟᱞᱚᱢ ᱮᱥᱮᱫ, ᱟᱨ ᱟᱢᱟᱜ ᱫᱮᱭᱟ ᱫᱟᱹᱲ ᱥᱮᱫ ᱫᱚᱦᱚ ᱢᱮ." }
+      }
+    },
+    {
+      "id": "ar_extinguisher",
+      "type": "AR",
+      "task": {
+        "taskId": "ar_extinguisher",
+        "instruction": { "en": "Find the FIRE EXTINGUISHER among the objects. Tap its button below.", "hi": "वस्तुओं में आग बुझाने का यंत्र (अग्निशामक) ढूंढें। नीचे बटन दबाएं।", "sat": "ᱡᱤᱱᱤᱥ ᱠᱚ ᱢᱩᱫᱽ ᱨᱮ ᱥᱮᱸᱜᱮᱞ ᱜᱚᱡ ᱢᱮᱥᱤᱱ ᱧᱮᱞ ᱠᱟᱛᱮᱜ ᱵᱚᱛᱚᱢ ᱛᱮᱵᱮ ᱢᱮ." },
+        "correctAsset": "models/extinguisher.glb",
+        "distractors": [ "models/helmet.glb", "models/safety_sign.glb" ]
+      }
+    },
+    {
+      "id": "theory_evac",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Evacuation sequence", "hi": "निकासी का क्रम", "sat": "ᱫᱟᱹᱲ ᱥᱮᱨᱮᱧ" },
+        "body": { "en": "1. Stop work at once. 2. Press the alarm. 3. Leave by the nearest marked exit — do not run. 4. Assemble at the designated point. 5. Count heads and report to the supervisor. Never use lifts during a fire.", "hi": "1. काम तुरंत रोकें। 2. अलार्म दबाएं। 3. निकटतम चिह्नित निकास से जाएं — दौड़ें नहीं। 4. निर्धारित स्थान पर इकट्ठा हों। 5. गिनती करें और पर्यवेक्षक को बताएं। आग में कभी लिफ्ट का उपयोग न करें।", "sat": "᱑. ᱩᱱᱤ ᱚᱠᱛᱮ ᱠᱟᱹᱢᱤ ᱵᱚᱸᱫᱚ ᱢᱮ. ᱒. ᱟᱞᱟᱨᱢ ᱛᱮᱵᱮ ᱢᱮ. ᱓. ᱥᱩᱨ ᱪᱤᱱᱦᱟᱹ ᱫᱟᱹᱲ ᱦᱚᱨᱟ ᱛᱮ ᱚᱰᱚᱠ ᱢᱮ — ᱧᱤᱨ ᱟᱞᱚᱢ. ᱔. ᱡᱟᱣᱨᱟ ᱴᱷᱟᱶ ᱨᱮ ᱡᱚᱲᱟᱣ ᱢᱮ. ᱕. ᱞᱮᱠᱷᱟ ᱠᱟᱛᱮᱜ ᱯᱟᱨᱵᱮᱠᱷᱚᱠ ᱠᱷᱚᱵᱚᱨ ᱮᱢᱟᱭ ᱢᱮ. ᱥᱮᱸᱜᱮᱞ ᱨᱮ ᱞᱤᱯᱷᱴ ᱟᱞᱚᱢ ᱵᱮᱣᱦᱟᱨ." }
+      }
+    },
+    {
+      "id": "fire_summary",
+      "type": "STATIC",
+      "static": {
+        "title": { "en": "Remember", "hi": "याद रखें", "sat": "ᱩᱫᱩᱜ ᱫᱚᱦᱚ ᱢᱮ" },
+        "body": { "en": "Exits first. PASS for extinguishers. Sequence: stop, alarm, evacuate, assemble, report.", "hi": "पहले निकास। बुझाने के लिए PASS। क्रम: रोकें, अलार्म, निकासी, इकट्ठा, रिपोर्ट।", "sat": "ᱞᱟᱦᱟ ᱫᱟᱹᱲ ᱦᱚᱨᱟ. ᱥᱮᱸᱜᱮᱞ ᱜᱚᱡ ᱞᱟᱹᱜᱤᱫ PASS. ᱥᱮᱨᱮᱧ: ᱵᱚᱸᱫᱚ, ᱟᱞᱟᱨᱢ, ᱫᱟᱹᱲ, ᱡᱚᱲᱟᱣ, ᱨᱤᱯᱚᱴ." }
+      }
+    }
+  ]
+}
