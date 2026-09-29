@@ -9,7 +9,6 @@ domains. On-device assessment + QR certificates form a **tamper-evident
 hash-chain ledger** that can be verified locally or on any PC through the
 included offline dashboard.
 
-> सुरक्षा (Suraksha) = "Safety" · 🇮🇳 हिन्दी / सन्ताली (Ol Chiki) 🟦🟨🟥
 
 ## How it works (no server)
 
