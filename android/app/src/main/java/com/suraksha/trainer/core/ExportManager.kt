@@ -91,27 +91,27 @@ class ExportManager(private val db: AppDatabase) {
     /** Writes the export to the shared Downloads folder. Returns a display path. */
     suspend fun writeToDownloads(context: Context): String? {
         val text = json.encodeToString(exportAll())
-        val fileName = "suraksha_export_${System.currentTimeMillis()}.json"
+        val fileName = "kaavach_export_${System.currentTimeMillis()}.json"
         val resolver = context.contentResolver
 
         return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             val values = ContentValues().apply {
                 put(MediaStore.Downloads.DISPLAY_NAME, fileName)
                 put(MediaStore.Downloads.MIME_TYPE, "application/json")
-                put(MediaStore.Downloads.RELATIVE_PATH, Environment.DIRECTORY_DOWNLOADS + "/Suraksha")
+                put(MediaStore.Downloads.RELATIVE_PATH, Environment.DIRECTORY_DOWNLOADS + "/Kaavach")
             }
             val uri: Uri? = resolver.insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI, values)
             if (uri == null) return null
             resolver.openOutputStream(uri)?.use { it.write(text.encodeToByteArray()) }
-            "Downloads/Suraksha/$fileName"
+            "Downloads/Kaavach/$fileName"
         } else {
             runCatching {
                 val dir = java.io.File(
                     Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
-                    "Suraksha"
+                    "Kaavach"
                 ).apply { mkdirs() }
                 java.io.File(dir, fileName).writeText(text)
-                "Downloads/Suraksha/$fileName"
+                "Downloads/Kaavach/$fileName"
             }.getOrNull()
         }
     }

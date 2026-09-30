@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Placeholder GLB generator for the Suraksha Trainer AR modules.
+Placeholder GLB generator for the Kaavach AR modules.
 
 Produces simple tinted boxes (stand-ins for fire extinguisher, gas cylinder,
 exit signage, helmet, machinery guard, first-aid kit). Real low-poly Blender

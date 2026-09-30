@@ -19,7 +19,7 @@ and manufacturing safety in Jharkhand. **No server, no cloud, no credentials.**
 │     hash-chain ledger, ZXing QR code                   │
 │   · QrDecoder (CameraX) — scan-to-verify               │
 │  ┌──────────────────────────────────────────────┐      │
-│  │ ExportManager → Downloads/suraksha_export_*.json    │
+│  │ ExportManager → Downloads/kaavach_export_*.json    │
 │  └──────────────────────────────────────────────┘      │
 └─────────────────────────┬──────────────────────────────┘
                           │ copy file to a PC (USB/cloud drive)

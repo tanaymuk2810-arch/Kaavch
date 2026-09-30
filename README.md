@@ -60,14 +60,14 @@ cd dashboard
 npm install
 npm run dev          # open http://localhost:5173
 ```
-Import a `suraksha_export_*.json` (exported from the app's Profile screen) —
+Import a `kaavach_export_*.json` (exported from the app's Profile screen) —
 no server, everything runs in the browser.
 
 ## Demo video (10 chapters · ≤3 min)
 Record on a mid-range Android phone (ARCore certified); capture screen with
 scrcpy (`scrcpy --no-audio --stereo on`) and mic. Chapters:
 
-1. **Bumper (0:00–0:05)** — app open on Home; show "Suraksha Trainer".
+1. **Bumper (0:00–0:05)** — app open on Home; show "Kaavach".
 2. **Offline-first (0:05–0:25)** — toggle airplane mode; open **Fire & Explosion
    Response** → theory step renders, no network spinner. Narrate in Hindi.
 3. **AR discovery (0:25–0:50)** — first AR task: point camera at table, see

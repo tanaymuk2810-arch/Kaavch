@@ -407,22 +407,22 @@ private fun ArStepView(
 /** Maps an asset filename to a display label (extracted from module content). */
 private fun objectLabelFor(asset: String, language: String): String = when {
     asset.contains("extinguisher") -> when (language) {
-        "hi" -> "आग बुझाने का यंत्र"; "sat" -> "Sel̃a sirkao"; else -> "Fire extinguisher"
+        "hi" -> "आग बुझाने का यंत्र"; "sat" -> "ᱥᱮᱸᱜᱮᱞ ᱜᱚᱡ ᱢᱮᱥᱤᱱ"; else -> "Fire extinguisher"
     }
     asset.contains("gas_cylinder") -> when (language) {
-        "hi" -> "गैस सिलेंडर"; "sat" -> "Gas silender"; else -> "Gas cylinder"
+        "hi" -> "गैस सिलेंडर"; "sat" -> "ᱜᱮᱥ ᱥᱤᱞᱤᱱᱰᱟᱨ"; else -> "Gas cylinder"
     }
     asset.contains("safety_sign") -> when (language) {
-        "hi" -> "निकास चिह्न"; "sat" -> "Dahra chinh"; else -> "Exit sign"
+        "hi" -> "निकास चिह्न"; "sat" -> "ᱫᱟᱹᱲ ᱪᱤᱱᱦᱟᱹ"; else -> "Exit sign"
     }
     asset.contains("helmet") -> when (language) {
-        "hi" -> "सुरक्षा हेलमेट"; "sat" -> "Suraksha helmet"; else -> "Safety helmet"
+        "hi" -> "सुरक्षा हेलमेट"; "sat" -> "ᱥᱩᱨᱚᱠᱷᱟ ᱦᱮᱞᱢᱮᱴ"; else -> "Safety helmet"
     }
     asset.contains("machinery_guard") -> when (language) {
-        "hi" -> "मशीन गार्ड"; "sat" -> "Machine pahira"; else -> "Machinery guard"
+        "hi" -> "मशीन गार्ड"; "sat" -> "ᱢᱮᱥᱤᱱ ᱜᱟᱨᱰ"; else -> "Machinery guard"
     }
     asset.contains("firstaid") -> when (language) {
-        "hi" -> "प्राथमिक चिकित्सा किट"; "sat" -> "Boyglu kit"; else -> "First-aid kit"
+        "hi" -> "प्राथमिक चिकित्सा किट"; "sat" -> "ᱯᱟᱹᱦᱤᱞ ᱩᱯᱪᱟᱹᱨ ᱠᱤᱴ"; else -> "First-aid kit"
     }
     else -> asset.substringAfterLast('/')
 }
