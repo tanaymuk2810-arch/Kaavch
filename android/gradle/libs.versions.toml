@@ -13,6 +13,7 @@ zxingEmbedded = "4.3.0"
 zxingCore = "3.5.3"
 serialization = "1.7.3"
 coil = "2.7.0"
+webkit = "1.10.0"
 junit = "4.13.2"
 androidxJunit = "1.2.1"
 espresso = "3.6.1"
@@ -46,6 +47,8 @@ zxing-core = { group = "com.google.zxing", name = "core", version.ref = "zxingCo
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
 
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
+androidx-webkit = { group = "androidx.webkit", name = "webkit", version.ref = "webkit" }
 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }

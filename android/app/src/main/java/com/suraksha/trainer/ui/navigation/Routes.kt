@@ -2,6 +2,7 @@ package com.suraksha.trainer.ui.navigation
 
 object Routes {
     const val ONBOARDING = "onboarding"
+    const val WEBAPP = "webapp"
     const val REGISTER = "register"
     const val HOME = "home"
     const val PROFILE = "profile"

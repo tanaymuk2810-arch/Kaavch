@@ -22,6 +22,7 @@ import com.suraksha.trainer.ui.screens.OnboardingScreen
 import com.suraksha.trainer.ui.screens.ProfileScreen
 import com.suraksha.trainer.ui.screens.RegisterScreen
 import com.suraksha.trainer.ui.screens.VerifyScreen
+import com.suraksha.trainer.ui.screens.WebAppScreen
 
 class AppViewModel(private val workerRepo: WorkerRepository) : ViewModel() {
     val activeWorker = workerRepo.observeActiveWorker()
@@ -39,7 +40,10 @@ fun AppRoot(container: AppContainer) {
     val vm: AppViewModel = viewModel(factory = appViewModelFactory(container))
     val worker by vm.activeWorker.collectAsState(initial = null)
 
-    NavHost(navController = nav, startDestination = Routes.ONBOARDING) {
+    NavHost(navController = nav, startDestination = Routes.WEBAPP) {
+        composable(Routes.WEBAPP) {
+            WebAppScreen()
+        }
         composable(Routes.ONBOARDING) {
             OnboardingScreen(nav)
         }
