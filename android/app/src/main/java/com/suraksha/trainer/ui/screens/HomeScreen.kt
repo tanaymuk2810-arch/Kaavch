@@ -69,8 +69,7 @@ class HomeViewModel(private val container: AppContainer) : ViewModel() {
         workerId,
         container.workerRepository.observeActiveWorker()
     ) { wid, worker ->
-        worker?.let { wid = it.id }
-        HomeUiState(workerId = wid)
+        HomeUiState(workerId = worker?.id ?: wid)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), HomeUiState())
 
     val progressFlow = MutableStateFlow<List<ModuleProgressEntity>>(emptyList())
@@ -88,7 +87,7 @@ class HomeViewModel(private val container: AppContainer) : ViewModel() {
 }
 
 private suspend fun <T> kotlinx.coroutines.flow.Flow<T>.firstSafe(): T =
-    kotlinx.coroutines.flow.first()
+    kotlinx.coroutines.flow.first(this)
 
 fun homeViewModelFactory(container: AppContainer): ViewModelProvider.Factory = viewModelFactory {
     initializer { HomeViewModel(container) }
@@ -142,11 +141,11 @@ fun HomeScreen(container: AppContainer, worker: WorkerEntity?, nav: NavControlle
 
         item {
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                QuickCard { nav.navigate(Routes.PROFILE) } {
+                QuickCard(onClick = { nav.navigate(Routes.PROFILE) }) {
                     Icon(Icons.Filled.Person, stringResource(R.string.home_profile))
                     Text(stringResource(R.string.home_profile))
                 }
-                QuickCard { nav.navigate(Routes.VERIFY) } {
+                QuickCard(onClick = { nav.navigate(Routes.VERIFY) }) {
                     Icon(Icons.Filled.VerifiedUser, stringResource(R.string.settings_verify_qr))
                     Text(stringResource(R.string.settings_verify_qr))
                 }
