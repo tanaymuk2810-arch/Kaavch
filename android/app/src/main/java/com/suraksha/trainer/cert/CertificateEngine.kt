@@ -186,6 +186,6 @@ class CertificateEngine(
     enum class VerificationResult { VALID, INVALID_CHAIN, INVALID_SIGNATURE, REVOKED, NOT_IN_LEDGER, INVALID_FORMAT }
 
     companion object {
-        const val HASH_GENESIS = "GENESIS-" + "0".repeat(64)
+        val HASH_GENESIS = "GENESIS-" + "0".repeat(64)
     }
 }

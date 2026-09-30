@@ -8,6 +8,8 @@ import com.suraksha.trainer.cert.CertificateEngine
 import com.suraksha.trainer.data.db.AppDatabase
 import com.suraksha.trainer.data.db.entity.CertificateEntity
 import com.suraksha.trainer.data.db.entity.TrainingAttemptEntity
+import kotlinx.coroutines.flow.first
+import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.json.Json
 
 class SessionRepository(
@@ -34,7 +36,7 @@ class SessionRepository(
             passed = result.passed,
             startedAt = System.currentTimeMillis() - 60_000,
             finishedAt = result.finishedAt,
-            answersJson = json.encodeToString<List<SubmittedAnswer>>(answers)
+            answersJson = json.encodeToString(ListSerializer(SubmittedAnswer.serializer()), answers)
         )
         db.trainingDao().upsertAttempt(attempt)
 

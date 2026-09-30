@@ -19,6 +19,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -160,7 +161,7 @@ fun AssessmentScreen(container: AppContainer, moduleId: String, nav: NavControll
     ) { padding ->
         when {
             state.result != null -> {
-                val result = state.result
+                val result = state.result!!
                 Column(
                     Modifier
                         .padding(padding)
@@ -295,7 +296,7 @@ private fun QuestionView(
                 var mapping by remember { mutableStateOf(answer?.mapping ?: emptyMap()) }
                 val remaining = current.pairs.keys.count { mapping[it] == null }
                 current.pairs.keys.forEach { item ->
-                    Row(Modifier.fillMaxWidth().padding(vertical = 4.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Row(Modifier.fillMaxWidth().padding(vertical = 4.dp), horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
                         Text(item, Modifier.weight(1f))
                         current.options.forEach { opt ->
                             val selected = mapping[item] == opt.id
