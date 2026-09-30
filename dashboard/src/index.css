@@ -28,6 +28,10 @@
   unicode-range: U+1C50-1C7F;
 }
 
+:root {
+  color-scheme: light;
+}
+
 body {
   color: #2D3436;
   font-family: Inter, "Noto Sans Ol Chiki", system-ui, sans-serif;

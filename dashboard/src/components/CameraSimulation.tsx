@@ -598,6 +598,7 @@ export default function CameraSimulation({
   const [phase, setPhase] = useState<Phase>("intro");
   const [step, setStep] = useState(0);
   const [noCam, setNoCam] = useState(false);
+  const [facing, setFacing] = useState<"environment" | "user">("environment");
   const [doneSteps, setDoneSteps] = useState<boolean[]>(() => def.steps.map(() => false));
   const doneCount = doneSteps.filter(Boolean).length;
   const allDone = doneCount >= def.steps.length;
@@ -674,7 +675,7 @@ export default function CameraSimulation({
     window.addEventListener("resize", resize);
 
     navigator.mediaDevices
-      ?.getUserMedia({ video: { facingMode: "environment", width: { ideal: 1280 } } })
+      ?.getUserMedia({ video: { facingMode: { ideal: facing }, width: { ideal: 1280 } } })
       .then((s) => {
         stream = s;
         video.srcObject = s;
@@ -698,18 +699,18 @@ export default function CameraSimulation({
       window.removeEventListener("resize", resize);
       stream?.getTracks().forEach((tr) => tr.stop());
     };
-  }, [def.hazard]);
+  }, [def.hazard, facing]);
 
   return (
     <div className="fixed inset-0 z-50 bg-black flex flex-col" role="dialog" aria-label="Camera simulation">
-      <div className="flex items-center justify-between px-4 py-2.5 bg-black/80 text-white backdrop-blur">
-        <div className="text-left">
+      <div className="flex items-center justify-between gap-2 px-3 sm:px-4 py-2.5 bg-black/80 text-white backdrop-blur">
+        <div className="text-left min-w-0 flex-1">
           <div className="text-xs font-semibold text-hazard-300 uppercase tracking-wide">
             {phase === "done" ? sx("taskDone", lang) : sx("liveSim", lang)}
           </div>
-          <div className="text-sm">{title}</div>
+          <div className="text-sm truncate">{title}</div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           <LangSwitch dark value={lang} onChange={(l) => setLanguage(l)} />
           <button
             onClick={toggleVoice}
@@ -720,6 +721,14 @@ export default function CameraSimulation({
             title="Voice assistant"
           >
             {voiceOn ? "🔊" : "🔇"}
+          </button>
+          <button
+            onClick={() => setFacing((f) => (f === "environment" ? "user" : "environment"))}
+            className="w-8 h-8 rounded-full border border-white/30 hover:bg-white/10 text-sm"
+            aria-label="Switch camera"
+            title={facing === "environment" ? "Use front camera" : "Use back camera"}
+          >
+            ⇄
           </button>
           <button
             onClick={() => {
@@ -740,7 +749,7 @@ export default function CameraSimulation({
       >
         <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover"
+          className={`absolute inset-0 w-full h-full object-cover ${facing === "user" ? "-scale-x-100" : ""}`}
           autoPlay
           playsInline
           muted

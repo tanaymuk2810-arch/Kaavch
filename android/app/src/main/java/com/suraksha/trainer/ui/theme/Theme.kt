@@ -7,36 +7,37 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-val Teal = Color(0xFF0E7490)
-val TealLight = Color(0xFF22A5BF)
-val Amber = Color(0xFFFBBF24)
-val AmberDark = Color(0xFFB45309)
-val SurfaceDark = Color(0xFF10222B)
-val SuccessGreen = Color(0xFF15803D)
-val ErrorRed = Color(0xFFB91C1C)
+// Brand palette (mirrors the web dashboard tokens).
+val Teal = Color(0xFF0B2545)
+val TealLight = Color(0xFF4E7396)
+val Amber = Color(0xFFD9A566)
+val AmberDark = Color(0xFFC97B5A)
+val SurfaceDark = Color(0xFF04101E)
+val SuccessGreen = Color(0xFF7A9B76)
+val ErrorRed = Color(0xFFC17B72)
 
 private val LightColors = lightColorScheme(
     primary = Teal,
     onPrimary = Color.White,
-    primaryContainer = Color(0xFFC7E9F0),
-    onPrimaryContainer = Color(0xFF0B3D49),
+    primaryContainer = Color(0xFFD3DEEB),
+    onPrimaryContainer = Color(0xFF071A30),
     secondary = AmberDark,
     onSecondary = Color.White,
     surface = Color.White,
-    background = Color(0xFFF5FAFB),
+    background = Color(0xFFF5F6F8),
     error = ErrorRed
 )
 
 private val DarkColors = darkColorScheme(
     primary = TealLight,
     onPrimary = Color.White,
-    primaryContainer = Color(0xFF0B3D49),
-    onPrimaryContainer = Color(0xFFC7E9F0),
+    primaryContainer = Color(0xFF143A52),
+    onPrimaryContainer = Color(0xFFD3DEEB),
     secondary = Amber,
     onSecondary = Color(0xFF3E2E00),
     surface = SurfaceDark,
     background = SurfaceDark,
-    error = Color(0xFFF87171)
+    error = Color(0xFFC17B72)
 )
 
 @Composable

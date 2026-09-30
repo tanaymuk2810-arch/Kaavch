@@ -14,8 +14,12 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -52,9 +56,16 @@ fun ArSessionHost(
             },
             onRelease = { _ -> controller.detachPreview() }
         )
+        TextButton(
+            onClick = { controller.toggleCamera() },
+            modifier = Modifier
+                .align(Alignment.TopEnd)
+                .padding(8.dp)
+        ) {
+            Text(if (controller.useFrontCamera) "⇄ Rear" else "⇄ Front")
+        }
         if (controller.markers.isNotEmpty()) {
-            BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
-                val width = maxWidth
+            BoxWithConstraints(modifier = Modifier.fillMaxSize()) {                val width = maxWidth
                 controller.markers.forEach { marker ->
                     val xFraction = (0.5f + marker.slot * 0.9f).coerceIn(0.05f, 0.95f)
                     Text(
@@ -90,38 +101,63 @@ data class PlacedMarker(
  */
 class ArSessionController {
     private var cameraProvider: ProcessCameraProvider? = null
+    private var previewView: PreviewView? = null
     private var started = false
     val markers = mutableStateListOf<PlacedMarker>()
+    var useFrontCamera by mutableStateOf(false)
+        private set
 
     fun attachPreview(view: PreviewView) {
-        startCamera(view)
+        previewView = view
+        bindCamera()
     }
 
     fun detachPreview() {
         runCatching { cameraProvider?.unbindAll() }
         cameraProvider = null
+        previewView = null
         started = false
     }
 
-    private fun startCamera(view: PreviewView) {
+    /** Switches between front and rear camera, rebinding the live preview. */
+    fun toggleCamera() {
+        useFrontCamera = !useFrontCamera
+        bindCamera()
+    }
+
+    private fun bindCamera() {
+        val view = previewView ?: return
         runCatching {
             val ctx: Context = view.context
             val lifecycleOwner = ctx as? LifecycleOwner ?: return
+            val selector = if (useFrontCamera) {
+                CameraSelector.DEFAULT_FRONT_CAMERA
+            } else {
+                CameraSelector.DEFAULT_BACK_CAMERA
+            }
+            val provider = cameraProvider
+            if (provider != null) {
+                runCatching {
+                    val preview = Preview.Builder().build().also {
+                        it.surfaceProvider = view.surfaceProvider
+                    }
+                    provider.unbindAll()
+                    provider.bindToLifecycle(lifecycleOwner, selector, preview)
+                    started = true
+                }
+                return
+            }
             val providerFuture = ProcessCameraProvider.getInstance(ctx)
             providerFuture.addListener(
                 {
                     runCatching {
-                        val provider = providerFuture.get()
+                        val fresh = providerFuture.get()
                         val preview = Preview.Builder().build().also {
                             it.surfaceProvider = view.surfaceProvider
                         }
-                        provider.unbindAll()
-                        provider.bindToLifecycle(
-                            lifecycleOwner,
-                            CameraSelector.DEFAULT_BACK_CAMERA,
-                            preview
-                        )
-                        cameraProvider = provider
+                        fresh.unbindAll()
+                        fresh.bindToLifecycle(lifecycleOwner, selector, preview)
+                        cameraProvider = fresh
                         started = true
                     }
                 },

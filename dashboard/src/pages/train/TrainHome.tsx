@@ -238,7 +238,7 @@ function Dashboard({ workerName, language }: { workerName: string; language: str
         <div className="flex items-center gap-3">
           <Logo className="w-9 h-9 shrink-0" />
           <div>
-            <h1 className="text-2xl font-bold text-brand-900">{sx("trainingTitle", language)}</h1>
+            <h1 className="text-xl sm:text-2xl font-bold text-brand-900">{sx("trainingTitle", language)}</h1>
             <p className="text-sm text-slate-500">
               {sx("welcome", language)}, <b>{workerName}</b>. {sx("completeBelow", language)}
             </p>
