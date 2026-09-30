@@ -664,6 +664,14 @@ export default function CameraSimulation({
   useEffect(() => {
     const stage = stageRef.current, video = videoRef.current;
     if (!stage || !video) return;
+    if (
+      typeof navigator === "undefined" ||
+      !navigator.mediaDevices?.getUserMedia
+    ) {
+      // plain http:// on phones (non-localhost) blocks the camera API
+      setNoCam(true);
+      return;
+    }
     let stream: MediaStream | null = null;
     const c = canvasRef.current;
     const resize = () => {
@@ -769,6 +777,34 @@ export default function CameraSimulation({
               <p className="text-xs text-slate-500">
                 {noCam ? sx("noCam", lang) : sx("camHint", lang)}
               </p>
+              <div>
+                <p className="text-[11px] font-semibold text-slate-500 uppercase tracking-wide mb-1.5">
+                  Camera
+                </p>
+                <div className="grid grid-cols-2 gap-1 bg-slate-200/70 rounded-lg p-1">
+                  {(
+                    [
+                      { id: "environment", label: "📷 Back" },
+                      { id: "user", label: "🤳 Front" },
+                    ] as const
+                  ).map((o) => (
+                    <button
+                      key={o.id}
+                      onClick={() => {
+                        setFacing(o.id);
+                        setNoCam(false);
+                      }}
+                      className={`rounded-md py-2 text-sm font-semibold transition-colors ${
+                        facing === o.id
+                          ? "bg-brand text-white shadow"
+                          : "text-slate-500 hover:text-slate-800"
+                      }`}
+                    >
+                      {o.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
               <button
                 onClick={() => setPhase("explain")}
                 className="w-full bg-hazard-500 text-white rounded-lg py-3 font-semibold hover:bg-hazard-600 btn-push"

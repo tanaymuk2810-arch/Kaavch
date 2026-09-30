@@ -1091,7 +1091,8 @@ export function Stage3D({
     const h = mount.clientHeight || 224;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
+    const dprCap = w < 768 ? 1.25 : 1.75;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, dprCap));
     renderer.setSize(w, h, false);
     renderer.setClearColor(0x000000, 0);
     renderer.shadowMap.enabled = true;
