@@ -339,12 +339,14 @@ private fun ArStepView(
                 style = MaterialTheme.typography.bodySmall
             )
             Spacer(Modifier.height(20.dp))
+            val correctLabel = stringResource(R.string.ar_task_correct)
+            val wrongLabel = stringResource(R.string.ar_task_wrong)
             assetPaths.forEach { asset ->
                 val isCorrect = asset == task.correctAsset
                 OutlinedButton(
                     onClick = {
                         vm.recordTaskResult(task.taskId, isCorrect, System.currentTimeMillis() - startedAt)
-                        feedback = if (isCorrect) stringResource(R.string.ar_task_correct) else stringResource(R.string.ar_task_wrong)
+                        feedback = if (isCorrect) correctLabel else wrongLabel
                     },
                     modifier = Modifier.fillMaxWidth()
                 ) { Text(objectLabelFor(asset, language)) }
@@ -372,12 +374,14 @@ private fun ArStepView(
                 LaunchedEffect(task) {
                     controller.placeTask(assetPaths)
                 }
+                val okLabel = stringResource(R.string.ar_task_correct)
+                val badLabel = stringResource(R.string.ar_task_wrong)
                 assetPaths.forEach { asset ->
                     val isCorrect = asset == task.correctAsset
                     Button(
                         onClick = {
                             vm.recordTaskResult(task.taskId, isCorrect, System.currentTimeMillis() - startedAt)
-                            feedback = if (isCorrect) stringResource(R.string.ar_task_correct) else stringResource(R.string.ar_task_wrong)
+                            feedback = if (isCorrect) okLabel else badLabel
                         },
                         modifier = Modifier
                             .fillMaxWidth()

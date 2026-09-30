@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -23,6 +22,9 @@ import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.ui.text.input.KeyboardOptions
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -102,8 +104,8 @@ fun RegisterScreen(container: AppContainer, nav: NavController) {
                 label = { Text(stringResource(R.string.reg_phone)) },
                 placeholder = { Text(stringResource(R.string.reg_phone_hint)) },
                 singleLine = true,
-                keyboardOptions = androidx.compose.ui.text.input.KeyboardOptions(
-                    keyboardType = androidx.compose.ui.text.input.KeyboardType.Phone
+                keyboardOptions = KeyboardOptions(
+                    keyboardType = KeyboardType.Phone
                 ),
                 modifier = Modifier.fillMaxWidth()
             )
