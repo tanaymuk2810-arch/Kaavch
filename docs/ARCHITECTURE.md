@@ -1,4 +1,4 @@
-# Suraksha Trainer — Architecture
+# Kaavach — Architecture
 
 A tamper-evident, fully-offline AR training and compliance system for mining
 and manufacturing safety in Jharkhand. **No server, no cloud, no credentials.**
