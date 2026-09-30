@@ -338,6 +338,7 @@ export function StepStage({
         height={192}
         className="absolute inset-0 w-full h-full"
         style={{ touchAction: "none" }}
+        onContextMenu={(e) => e.preventDefault()}
         onPointerDown={(ev) => {
           const p = pos(ev);
           const e = eng.current;

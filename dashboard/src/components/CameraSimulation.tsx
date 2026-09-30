@@ -754,6 +754,8 @@ export default function CameraSimulation({
       <div
         ref={stageRef}
         className="relative flex-1 overflow-hidden select-none"
+        style={{ touchAction: "none", overscrollBehavior: "none" }}
+        onContextMenu={(e) => e.preventDefault()}
       >
         <video
           ref={videoRef}

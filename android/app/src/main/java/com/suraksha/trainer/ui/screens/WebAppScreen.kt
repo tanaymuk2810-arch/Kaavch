@@ -29,11 +29,123 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
-import androidx.webkit.WebViewAssetLoader
 import androidx.webkit.WebViewClientCompat
 
 const val WEBAPP_ORIGIN = "https://appassets.androidplatform.net"
 const val WEBAPP_ENTRY = "$WEBAPP_ORIGIN/assets/www/index.html"
+
+/**
+ * Serves a bundled file from assets/www for our domain, with HTTP range
+ * support so video section-seeking behaves exactly like in Chrome.
+ */
+private fun serveAsset(context: Context, request: WebResourceRequest): WebResourceResponse? {
+    var path = request.url?.path?.trimStart('/') ?: return null
+    if (path.isEmpty()) path = "index.html"
+    var assetPath = "www/$path"
+    val ext = assetPath.substringAfterLast('.', "")
+    val mime = when (ext) {
+        "html" -> "text/html"
+        "js" -> "text/javascript"
+        "mjs" -> "text/javascript"
+        "css" -> "text/css"
+        "json" -> "application/json"
+        "svg" -> "image/svg+xml"
+        "png" -> "image/png"
+        "jpg", "jpeg" -> "image/jpeg"
+        "webp" -> "image/webp"
+        "woff2" -> "font/woff2"
+        "woff" -> "font/woff"
+        "ttf" -> "font/ttf"
+        "mp4" -> "video/mp4"
+        "webm" -> "video/webm"
+        else -> "application/octet-stream"
+    }
+    return try {
+        openAssetResponse(context, assetPath, mime, request)
+    } catch (notFound: java.io.FileNotFoundException) {
+        // SPA fallback: extensionless deep links resolve to index.html
+        if (!assetPath.contains('.')) {
+            try {
+                openAssetResponse(context, "www/index.html", "text/html", request)
+            } catch (missing: java.io.FileNotFoundException) {
+                null
+            }
+        } else {
+            null
+        }
+    }
+}
+
+private fun openAssetResponse(
+    context: Context,
+    assetPath: String,
+    mime: String,
+    request: WebResourceRequest
+): WebResourceResponse {
+    val afd = context.assets.openFd(assetPath)
+    val total = afd.length
+    val range = request.requestHeaders["Range"] ?: request.requestHeaders["range"]
+    if (range != null) {
+        val m = Regex("bytes=(\\d*)-(\\d*)").find(range)
+        val start = m?.groupValues?.getOrNull(1)?.toLongOrNull() ?: 0L
+        var end = m?.groupValues?.getOrNull(2)?.toLongOrNull() ?: (total - 1)
+        if (end >= total) end = total - 1
+        if (start < 0 || start >= total) {
+            afd.close()
+            return WebResourceResponse(
+                mime, null, 416, "Range Not Satisfiable",
+                mapOf("Content-Range" to "bytes */$total"), null
+            )
+        }
+        val stream = android.content.res.AssetFileDescriptor.AutoCloseInputStream(afd)
+        var skipped = 0L
+        while (skipped < start) {
+            val s = stream.skip(start - skipped)
+            if (s <= 0) break
+            skipped += s
+        }
+        val headers = mapOf(
+            "Content-Range" to "bytes $start-$end/$total",
+            "Accept-Ranges" to "bytes",
+            "Content-Length" to "${end - start + 1}"
+        )
+        return WebResourceResponse(
+            mime, null, 206, "Partial Content", headers,
+            BoundedInputStream(stream, end - start + 1)
+        )
+    }
+    val headers = mapOf(
+        "Accept-Ranges" to "bytes",
+        "Content-Length" to "$total"
+    )
+    return WebResourceResponse(
+        mime, null, 200, "OK", headers,
+        android.content.res.AssetFileDescriptor.AutoCloseInputStream(afd)
+    )
+}
+
+private class BoundedInputStream(
+    private val wrapped: java.io.InputStream,
+    private var remaining: Long
+) : java.io.InputStream() {
+    override fun read(): Int {
+        if (remaining <= 0) return -1
+        val b = wrapped.read()
+        if (b >= 0) remaining--
+        return b
+    }
+
+    override fun read(buffer: ByteArray, offset: Int, length: Int): Int {
+        if (remaining <= 0) return -1
+        val n = wrapped.read(buffer, offset, minOf(length.toLong(), remaining).toInt())
+        if (n > 0) remaining -= n
+        return n
+    }
+
+    override fun close() {
+        runCatching { wrapped.close() }
+    }
+}
 
 /**
  * Hosts the production web build (dashboard + worker app) inside an offline
@@ -41,7 +153,7 @@ const val WEBAPP_ENTRY = "$WEBAPP_ORIGIN/assets/www/index.html"
  * modules, videos, 3D simulations, voice, assessments, QR certificates,
  * export and the admin panel.
  *
- * Served through WebViewAssetLoader on https://appassets.androidplatform.net,
+ * Served from the bundled assets on https://appassets.androidplatform.net,
  * which is a secure context — so camera (getUserMedia), WebCrypto, speech
  * synthesis and localStorage all work exactly like in Chrome, with zero
  * network. Blob downloads (JSON/CSV exports) are bridged to Downloads.
@@ -75,17 +187,16 @@ fun WebAppScreen() {
                 settings.allowFileAccess = false
                 settings.cacheMode = WebSettings.LOAD_DEFAULT
                 addJavascriptInterface(BlobSaver(ctx), "AndroidBlob")
-                val assetLoader = WebViewAssetLoader.Builder()
-                    .setDomain("appassets.androidplatform.net")
-                    .addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(ctx))
-                    .addPathHandler("/res/", WebViewAssetLoader.ResourcesPathHandler(ctx))
-                    .build()
                 webViewClient = object : WebViewClientCompat() {
+                    // Serve the bundled web build (assets/www/...) for every
+                    // path on our domain, with HTTP range support so <video>
+                    // section seeking works exactly like in Chrome.
                     override fun shouldInterceptRequest(
                         view: WebView,
                         request: WebResourceRequest
                     ): WebResourceResponse? {
-                        return assetLoader.shouldInterceptRequest(request.url!!)
+                        if (request.url?.host != "appassets.androidplatform.net") return null
+                        return runCatching { serveAsset(ctx, request) }.getOrNull()
                     }
                 }
                 webChromeClient = object : WebChromeClient() {
