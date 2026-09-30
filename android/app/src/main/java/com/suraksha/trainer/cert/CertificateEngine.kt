@@ -27,7 +27,7 @@ import java.util.UUID
  *   chainHash   = sha256(prevCert.chainHash || payload)  — a lightweight
  *                 blockchain-style hash-chain over the on-device ledger.
  *   signature   = ECDSA-SHA256 over payload, key held in Android Keystore
- *   QR          = SURAKSHA1|...|pubKey|signature
+ *   QR          = domain|...|pubKey|signature  (11 pipe-separated parts)
  */
 class CertificateEngine(
     private val context: Context,
