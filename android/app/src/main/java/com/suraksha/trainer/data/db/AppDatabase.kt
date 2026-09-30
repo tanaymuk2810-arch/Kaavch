@@ -30,7 +30,7 @@ const val DB_NAME = "suraksha.db"
         CertificateEntity::class
     ],
     version = 2,
-    exportSchema = true
+    exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
     abstract fun workerDao(): WorkerDao

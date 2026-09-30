@@ -40,7 +40,7 @@ fun ArSessionHost(
  */
 class ArSessionController {
     private var sceneView: ArSceneView? = null
-    private val trackedNodes = mutableListOf<(String, ArModelNode)>()
+    private val trackedNodes = mutableListOf<Pair<String, ArModelNode>>()
 
     fun bind(view: ArSceneView, context: Context) {
         sceneView = view
