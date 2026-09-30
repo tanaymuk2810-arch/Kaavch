@@ -11,7 +11,6 @@ room = "2.6.1"
 camerax = "1.4.1"
 zxingEmbedded = "4.3.0"
 zxingCore = "3.5.3"
-sceneview = "2.3.0"
 serialization = "1.7.3"
 coil = "2.7.0"
 junit = "4.13.2"
@@ -43,9 +42,6 @@ androidx-camerax-view = { group = "androidx.camera", name = "camera-view", versi
 
 zxing-embedded = { group = "com.journeyapps", name = "zxing-android-embedded", version.ref = "zxingEmbedded" }
 zxing-core = { group = "com.google.zxing", name = "core", version.ref = "zxingCore" }
-
-sceneview-ar = { group = "io.github.sceneview", name = "arsceneview", version.ref = "sceneview" }
-sceneview-core = { group = "io.github.sceneview", name = "sceneview", version.ref = "sceneview" }
 
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
 
