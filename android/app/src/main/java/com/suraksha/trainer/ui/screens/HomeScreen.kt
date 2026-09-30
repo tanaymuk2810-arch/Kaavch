@@ -49,6 +49,7 @@ import com.suraksha.trainer.ui.navigation.Routes
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
@@ -86,8 +87,7 @@ class HomeViewModel(private val container: AppContainer) : ViewModel() {
     }
 }
 
-private suspend fun <T> kotlinx.coroutines.flow.Flow<T>.firstSafe(): T =
-    kotlinx.coroutines.flow.first(this)
+private suspend fun <T> kotlinx.coroutines.flow.Flow<T>.firstSafe(): T = first()
 
 fun homeViewModelFactory(container: AppContainer): ViewModelProvider.Factory = viewModelFactory {
     initializer { HomeViewModel(container) }
@@ -141,11 +141,11 @@ fun HomeScreen(container: AppContainer, worker: WorkerEntity?, nav: NavControlle
 
         item {
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                QuickCard(onClick = { nav.navigate(Routes.PROFILE) }) {
+                QuickCard(modifier = Modifier.weight(1f), onClick = { nav.navigate(Routes.PROFILE) }) {
                     Icon(Icons.Filled.Person, stringResource(R.string.home_profile))
                     Text(stringResource(R.string.home_profile))
                 }
-                QuickCard(onClick = { nav.navigate(Routes.VERIFY) }) {
+                QuickCard(modifier = Modifier.weight(1f), onClick = { nav.navigate(Routes.VERIFY) }) {
                     Icon(Icons.Filled.VerifiedUser, stringResource(R.string.settings_verify_qr))
                     Text(stringResource(R.string.settings_verify_qr))
                 }
@@ -176,11 +176,10 @@ fun HomeScreen(container: AppContainer, worker: WorkerEntity?, nav: NavControlle
 }
 
 @Composable
-private fun QuickCard(onClick: () -> Unit, content: @Composable () -> Unit) {
+private fun QuickCard(modifier: Modifier = Modifier, onClick: () -> Unit, content: @Composable () -> Unit) {
     Card(
         onClick = onClick,
-        modifier = Modifier
-            .weight(1f)
+        modifier = modifier
             .padding(vertical = 4.dp)
     ) {
         Column(

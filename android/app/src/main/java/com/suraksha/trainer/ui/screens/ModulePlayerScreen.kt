@@ -36,6 +36,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -153,6 +154,7 @@ fun ModulePlayerScreen(container: AppContainer, moduleId: String, nav: NavContro
         factory = modulePlayerViewModelFactory(container, moduleId)
     )
     val context = LocalContext.current
+    val scope = rememberCoroutineScope()
     val state by vm.state.collectAsState()
     val pack = state.pack
     val steps = vm.steps
@@ -209,7 +211,7 @@ fun ModulePlayerScreen(container: AppContainer, moduleId: String, nav: NavContro
                 onNext = { vm.next() },
                 isLast = state.stepIndex == steps.size - 1,
                 onComplete = {
-                    vm.commitEvents()
+                    scope.launch { vm.commitEvents() }
                     nav.navigate(Routes.assessment(moduleId))
                 },
                 modifier = Modifier.padding(padding)
@@ -220,7 +222,7 @@ fun ModulePlayerScreen(container: AppContainer, moduleId: String, nav: NavContro
                     StaticStepView(
                         step, state.language, { vm.next() }, state.stepIndex == steps.size - 1,
                         {
-                            vm.commitEvents()
+                            scope.launch { vm.commitEvents() }
                             nav.navigate(Routes.assessment(moduleId))
                         },
                         Modifier.padding(padding)
@@ -234,7 +236,7 @@ fun ModulePlayerScreen(container: AppContainer, moduleId: String, nav: NavContro
                         arActive = arActive,
                         isLast = state.stepIndex == steps.size - 1,
                         onComplete = {
-                            vm.commitEvents()
+                            scope.launch { vm.commitEvents() }
                             nav.navigate(Routes.assessment(moduleId))
                         },
                         modifier = Modifier.padding(padding)
@@ -251,7 +253,7 @@ fun ModulePlayerScreen(container: AppContainer, moduleId: String, nav: NavContro
                 ) {
                     Button(
                         onClick = {
-                            vm.commitEvents()
+                            scope.launch { vm.commitEvents() }
                             nav.navigate(Routes.assessment(moduleId))
                         }
                     ) { Text(stringResource(R.string.assess_title)) }
