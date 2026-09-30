@@ -78,6 +78,7 @@ dependencies {
     implementation(libs.zxing.core)
 
     implementation(libs.sceneview.ar)
+    implementation(libs.sceneview.core)
 
     implementation(libs.kotlinx.serialization.json)
 

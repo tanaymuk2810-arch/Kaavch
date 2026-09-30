@@ -5,7 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
 import io.github.sceneview.ar.ArSceneView
-import io.github.sceneview.ar.node.ArModelNode
+import io.github.sceneview.node.ModelNode
 import io.github.sceneview.math.Float3
 
 /**
@@ -40,7 +40,7 @@ fun ArSessionHost(
  */
 class ArSessionController {
     private var sceneView: ArSceneView? = null
-    private val trackedNodes = mutableListOf<Pair<String, ArModelNode>>()
+    private val trackedNodes = mutableListOf<Pair<String, ModelNode>>()
 
     fun bind(view: ArSceneView, context: Context) {
         sceneView = view
@@ -60,17 +60,18 @@ class ArSessionController {
             assetPaths.forEachIndexed { index, glb ->
                 val slot = slots.getOrElse(index) { 0f }
                 val basePose = Float3(slot, -0.45f, -0.9f)
-                val node = ArModelNode(view.engine).apply {
-                    position = basePose
-                    runCatching {
-                        loadModelGlbAsync(
-                            glb = glb,
-                            autoScale = true
-                        )
+                runCatching {
+                    view.modelLoader.loadModelInstanceAsync(glb) { instance ->
+                        runCatching {
+                            val safe = instance ?: return@loadModelInstanceAsync
+                            val node = ModelNode(modelInstance = safe).apply {
+                                position = basePose
+                            }
+                            runCatching { view.addChildNode(node) }
+                            trackedNodes.add(glb to node)
+                        }
                     }
                 }
-                runCatching { view.scene.addChild(node) }
-                trackedNodes.add(glb to node)
             }
         }
     }
