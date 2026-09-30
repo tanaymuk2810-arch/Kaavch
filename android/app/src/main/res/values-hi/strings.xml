@@ -6,7 +6,7 @@
     <!-- Common -->
     <string name="next">आगे</string>
     <string name="back">पीछे</string>
-    <string name="continue">जारी रखें</string>
+    <string name="continue_btn">जारी रखें</string>
     <string name="cancel">रद्द करें</string>
     <string name="retry">फिर कोशिश करें</string>
     <string name="finish">समाप्त</string>

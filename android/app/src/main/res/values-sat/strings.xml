@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Santali (Ol Chiki) localisation — LIVE TEMPLATE
-  -------------------------------------------------
+  ===================================================
   The strings below are placeholders that MUST be reviewed and translated
   by a native Santali speaker before release. Missing keys automatically
   fall back to Hindi (values-hi) then English (values).
@@ -17,7 +17,7 @@
     <!-- Common -->
     <string name="next">Aage</string>
     <string name="back">Pichha</string>
-    <string name="continue">Kedala</string>
+    <string name="continue_btn">Kedala</string>
     <string name="cancel">Badala</string>
     <string name="retry">Ari choroseda</string>
     <string name="finish">Sesi</string>

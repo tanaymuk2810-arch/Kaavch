@@ -6,7 +6,7 @@
     <!-- Common -->
     <string name="next">Next</string>
     <string name="back">Back</string>
-    <string name="continue">Continue</string>
+    <string name="continue_btn">Continue</string>
     <string name="cancel">Cancel</string>
     <string name="retry">Retry</string>
     <string name="finish">Finish</string>
